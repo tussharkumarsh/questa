@@ -1,0 +1,590 @@
+.banner-btn {
+  background: #7A1AF0;
+  border: 2px solid white;
+  outline: 5px solid #7A1AF0;
+  border-radius: 70px;
+  padding: 1rem 9rem;
+}
+
+.banner-btn span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: -0.10799998790025711px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.slider-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 98.62px;
+  text-align: left;
+  color: #603F87;
+}
+
+.slider.slick-prev {
+  display: none !important;
+}
+
+
+
+
+
+
+
+
+.text-hover-div:hover .show-on-hover {
+  filter: blur(4px);
+  transition: .2s ease;
+}
+
+.show-text-on-hover {
+  opacity: 0;
+  transition: .2s ease;
+}
+
+.text-hover-div:hover .show-text-on-hover {
+  opacity: 1;
+  transition: .2s ease;
+  background-color: #1a264189;
+  height: 100%;
+  width: 95%;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+.image-1 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.middle-1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container-1 {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.image-1 {
+  border-radius: 10px;
+}
+
+.container-1:hover .image-1 {
+  filter: blur(3px);
+  border-radius: 10px;
+}
+
+.container-1:hover .middle-1 {
+  opacity: 1;
+  background-color: #3b58984c;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-1 {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.default-text {
+  opacity: 1;
+  transition: .8s ease;
+}
+
+
+.container-1:hover .default-text {
+  opacity: 0;
+  transition: .5s ease;
+}
+
+
+
+.youtube-container {
+  overflow: hidden;
+  width: 100%;
+  /* Keep it the right aspect-ratio */
+  aspect-ratio: 16/9;
+  /* No clicking/hover effects */
+  pointer-events: fill;
+
+  border-radius: 20px;
+
+  iframe {
+    /* Extend it beyond the viewport... */
+    width: 300%;
+    height: 100%;
+    /* ...and bring it back again */
+    margin-left: -100%;
+  }
+}
+
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-item {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
+  transition: 0.5s;
+}
+
+.scroll-item:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+.scroll-item-left {
+  display: flex;
+  animation: scroll-left 40s linear infinite;
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
+  transition: 0.5s;
+}
+
+.scroll-item-left:hover {
+  display: flex;
+  animation: scroll-left 40s linear infinite;
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+
+
+.note-text {
+  height: 4rem;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding: 0 5rem;
+}
+
+.note-field:not(.show)::after {
+  content: '...';
+  padding-left: 0.5rem;
+  background-color: white;
+  position: absolute;
+  right: 92px;
+  bottom: 1px;
+}
+
+.show {
+  overflow: visible;
+  text-overflow: none;
+  height: auto;
+}
+
+
+
+
+.show-mobile {
+  display: none;
+}
+
+.hide-mobile {
+  display: block;
+}
+
+
+.padding-top-8rem {
+  padding-top: 8rem;
+}
+
+.about-us-div {
+  text-align-last: center;
+  padding-top: 7rem;
+  padding-bottom: 30rem;
+}
+
+.about-us-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FF82EB;
+}
+
+.Talent-Reimagined-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  color: #000000;
+}
+
+.from-the-founder-text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: left;
+  color: #000000;
+}
+
+.from-the-founder-sub-text{
+  font-family: 'Raleway', sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 38px;
+                letter-spacing: -0.2999999523162842px;
+                text-align: left;
+                color: #000000;
+}
+
+.Our-Leadership-Team-heading{
+  font-family: 'Raleway', sans-serif;
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 52px;
+        text-align: center;
+        color: #000000;
+}
+
+.member-name{
+  font-family: 'Raleway', sans-serif;
+                            font-size: 32px;
+                            font-weight: 600;
+                            line-height: 38px;
+                            letter-spacing: -0.2999999523162842px;
+                            text-align: left;
+                            color: #000000;
+}
+
+.member-name-designation{
+  font-family: 'Raleway', sans-serif;
+                            font-size: 24px;
+                            font-weight: 400;
+                            line-height: 38px;
+                            letter-spacing: -0.2999999523162842px;
+                            text-align: left;
+                            color: #000000;
+}
+
+.member-div{
+  place-items: center; padding-right: 4rem;
+}
+
+.member-discription{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: -0.2999999523162842px;
+  text-align: left;
+  color: #000000;
+}
+
+.margin-top-bot-5{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.Our-Philosophy-text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+
+.img-div-light{
+  padding: 2rem; height: 170px; align-content: center;
+}
+
+.Innovation-text-heading{
+  font-family: 'Raleway', sans-serif;
+                            font-size: 28px;
+                            font-weight: 600;
+                            line-height: 37px;
+                            letter-spacing: -0.11399998515844345px;
+                            text-align: left;
+                            color: #ffffff;
+}
+
+.scroll-section-div{
+  padding-top: 5rem; padding-bottom: 5rem;
+}
+
+.our-value-ststem-section{
+  background-color: #F3E8FF; padding: 5rem 0; margin-top: 5rem; margin-bottom: 5rem;
+}
+
+.Work-Opportunities-with-Questa{
+  font-family: 'Raleway', sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 54px;
+        letter-spacing: -0.11399998515844345px;
+        text-align: center;
+        color: #C493FF;
+}
+
+@media (max-width: 992px) and (min-width: 300px) {
+  .show-mobile {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .hide-mobile-btn{
+    display: none;
+  }
+
+  .img-width-mob-100 {
+    width: 100%;
+  }
+
+
+  .banner-btn {
+    background: #7A1AF0;
+    border: 2px solid white;
+    outline: 5px solid #7A1AF0;
+    border-radius: 70px;
+    padding: 1rem 3rem;
+  }
+
+  .banner-btn span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.10799998790025711px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .padding-top-8rem {
+    padding-top: 0rem;
+  }
+
+  .about-us-div {
+    text-align-last: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .about-us-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FF82EB;
+  }
+
+  .Talent-Reimagined-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .from-the-founder-text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 52px;
+    text-align: left;
+    color: #000000;
+    margin-top: 1rem;
+  }
+
+  .from-the-founder-sub-text{
+    font-family: 'Raleway', sans-serif;
+                  font-size: 12px;
+                  font-weight: 300;
+                  line-height: 30px;
+                  letter-spacing: -0.2999999523162842px;
+                  text-align: left;
+                  color: #000000;
+  }
+
+  .Our-Leadership-Team-heading{
+    font-family: 'Raleway', sans-serif;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 52px;
+          text-align: center;
+          color: #000000;
+  }
+
+  .member-name{
+    font-family: 'Raleway', sans-serif;
+                              font-size: 20px;
+                              font-weight: 600;
+                              line-height: 26px;
+                              letter-spacing: -0.2999999523162842px;
+                              text-align: left;
+                              color: #000000;
+  }
+
+  .member-name-designation{
+    font-family: 'Raleway', sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              line-height: 24px;
+                              letter-spacing: -0.2999999523162842px;
+                              text-align: left;
+                              color: #000000;
+  }
+  
+  .member-div{
+    place-items: center; padding-right: 0rem;
+  }
+
+  .member-discription{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: -0.2999999523162842px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .margin-top-bot-5{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .Our-Philosophy-text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .note-text {
+    height: 4rem;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 0 0rem;
+  }
+  
+  .img-div-light{
+    padding: 1rem; height: 100%; align-content: center;
+  }
+
+  .img-div-light img{
+    width: 50px;
+  }
+
+  .Innovation-text-heading{
+    font-family: 'Raleway', sans-serif;
+                              font-size: 20px;
+                              font-weight: 600;
+                              line-height: 30px;
+                              letter-spacing: -0.11399998515844345px;
+                              text-align: left;
+                              color: #ffffff;
+  }
+
+  .scroll-section-div{
+    padding-top: 1rem; padding-bottom: 1rem;
+  }
+
+  .our-value-ststem-section{
+    background-color: #F3E8FF; padding: 2rem 0; margin-top: 2rem; margin-bottom: 2rem;
+  }
+
+  .logo-list-img{
+    height: 50px;
+  }
+
+  .Work-Opportunities-with-Questa{
+    font-family: 'Raleway', sans-serif;
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 34px;
+          letter-spacing: -0.11399998515844345px;
+          text-align: center;
+          color: #C493FF;
+  }
+}
+
+
+
+
+@media (max-width: 429px) and (min-width: 427px) {
+
+  .about-us-div {
+    text-align-last: center;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+}

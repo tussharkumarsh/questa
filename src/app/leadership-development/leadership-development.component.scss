@@ -1,0 +1,891 @@
+.banner-btn {
+  background: #7A1AF0;
+  border: 2px solid white;
+  outline: 5px solid #7A1AF0;
+  border-radius: 70px;
+  padding: 1rem 9rem;
+}
+
+.banner-btn span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: -0.10799998790025711px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.slider-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 98.62px;
+  text-align: left;
+  color: #603F87;
+}
+
+.slider.slick-prev {
+  display: none !important;
+}
+
+
+
+
+
+
+
+
+.text-hover-div:hover .show-on-hover {
+  filter: blur(4px);
+  transition: .2s ease;
+}
+
+.show-text-on-hover {
+  opacity: 0;
+  transition: .2s ease;
+}
+
+.text-hover-div:hover .show-text-on-hover {
+  opacity: 1;
+  transition: .2s ease;
+  background-color: #1a264189;
+  height: 100%;
+  width: 95%;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+.image-1 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.middle-1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container-1 {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.image-1 {
+  border-radius: 10px;
+}
+
+.container-1:hover .image-1 {
+  filter: blur(3px);
+  border-radius: 10px;
+}
+
+.container-1:hover .middle-1 {
+  opacity: 1;
+  background-color: #3b58984c;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-1 {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.default-text {
+  opacity: 1;
+  transition: .8s ease;
+}
+
+
+.container-1:hover .default-text {
+  opacity: 0;
+  transition: .5s ease;
+}
+
+
+
+
+
+
+
+
+.rotate-in-up-left {
+  animation: rotate-in-up-left 2s ease infinite;
+}
+
+@keyframes rotate-in-up-left {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+.rotate-in-down-left {
+  animation: rotate-in-down-left 4s ease;
+}
+
+@keyframes rotate-in-down-left {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+// testimonial css
+
+.testimonial-box {
+  border: 2px solid #FF82EB;
+  border-radius: 20px;
+  padding: 5rem 3rem;
+}
+
+.col-6-border-right {
+  border-right: 2px solid #FF82EB;
+  padding: 2rem;
+}
+
+.testimonial-box-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -0.2999999523162842px;
+  text-align: left;
+  color: #FF82EB;
+}
+
+.test-padding-1 {
+  padding: 1rem;
+}
+
+.test-padding-2 {
+  padding: 2rem;
+}
+
+// testimonial css
+
+
+@media (max-width: 992px) and (min-width: 300px) {
+
+  // testimonial css start
+  .testimonial-box {
+    border: 2px solid #FF82EB;
+    border-radius: 20px;
+    padding: 1rem 1rem;
+  }
+
+  .col-6-border-right {
+    border-right: none;
+    padding: 1rem;
+  }
+
+  .testimonial-box-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.2999999523162842px;
+    text-align: left;
+    color: #FF82EB;
+  }
+
+  .test-padding-1 {
+    padding: 0rem;
+  }
+
+  .test-padding-2 {
+    padding: 0.5rem;
+  }
+
+  // testimonial css end
+}
+
+
+.show-mobile {
+  display: none;
+}
+
+.hide-mobile {
+  display: block;
+}
+
+
+.Cultivating-Leadership-section {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.Cultivating-Leadership-Excellence {
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+}
+
+.Select-from-a-variety {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: center;
+  color: #7E7E7E;
+}
+
+.Translating-strategy-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56.35px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Translating-strategy-sub-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30.52px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Unlock-the-key {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.11399998515844345px;
+  color: #FFFFFF;
+}
+
+.Unlock-the-key-div {
+  text-align: center;
+  padding: 2rem;
+  position: absolute;
+  top: 6px;
+  left: 22px;
+  height: 96%;
+  width: 91%;
+}
+
+.get-started-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20.8px;
+  font-weight: 600;
+  line-height: 31.39px;
+  letter-spacing: -0.10935002565383911px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.As-we-look-ahead {
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 92px;
+  letter-spacing: -0.09599998593330383px;
+  text-align: center;
+  color: #603F87;
+}
+
+.Bill-Gates {
+  font-family: 'Raleway', sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 82px;
+  letter-spacing: -0.09599998593330383px;
+  text-align: center;
+  color: #C493FF;
+}
+
+.Craft-your-Leadership {
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #000000;
+}
+
+.A-Holistic-Leadership-Development-pink {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FF82EB;
+}
+
+.Questa-Talent-Development-Roadmap {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 46.96px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: left;
+}
+
+.Learn-More-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20.8px;
+  font-weight: 600;
+  line-height: 31.39px;
+  letter-spacing: -0.10935002565383911px;
+  text-align: center;
+}
+
+.Questa-Talent-Development-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  align-items: center;
+}
+
+.Keep-up-with-the-div {
+  padding: 2.5rem;
+  text-align-last: left;
+}
+
+.Keep-up-with-the-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: left;
+  color: #7E7E7E;
+}
+
+.point-check-img {
+  padding-right: 1rem;
+}
+
+.Need-Analysis-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: left;
+  color: #000000;
+  vertical-align: middle;
+}
+
+.zero-img {
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+  width: 120px;
+  height: 150px;
+}
+
+.ROI-of-6x {
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: center;
+}
+
+.Invest-in-Leadership {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 39px;
+  text-align: left;
+  color: #000000;
+}
+
+.Fast-Track-Leadership-grid {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
+
+.Leadership-Succession-Planning-head {
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+
+.As-a-business-owner-or {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.planning-1-flex-item {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.planning-1-img-100 {
+  margin-bottom: 1rem;
+}
+
+.planning-1-img-100-last {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.Competitive-edge {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.22px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: left;
+  color: #000000;
+}
+
+.surveyed-companies-state-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.surveyed-companies-state-per {
+  font-family: 'Raleway', sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 164.36px;
+  text-align: left;
+  color: #603F87;
+  padding-right: 1rem;
+}
+
+.surveyed-companies-state-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 53.68px;
+  text-align: left;
+  color: #000000;
+}
+
+@media (max-width: 992px) and (min-width: 300px) {
+  .show-mobile {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .hide-for-mobile{
+    display: none;
+  }
+
+  .Cultivating-Leadership-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .Cultivating-Leadership-Excellence {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .Select-from-a-variety {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: center;
+    color: #7E7E7E;
+  }
+
+  .cultivating-1-img {
+    width: 100%;
+  }
+
+  .Translating-strategy-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36.35px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .Translating-strategy-sub-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30.52px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .Unlock-the-key {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: -0.11399998515844345px;
+    color: #FFFFFF;
+  }
+
+  .Unlock-the-key-div {
+    text-align: center;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    height: 96%;
+    width: 91%;
+  }
+
+
+  .get-started-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10.8px;
+    font-weight: 600;
+    line-height: 21.39px;
+    letter-spacing: -0.10935002565383911px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .width-mob-100 {
+    width: 100%;
+  }
+
+  .As-we-look-ahead {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.09599998593330383px;
+    text-align: center;
+    color: #603F87;
+  }
+
+  .Bill-Gates {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: -0.09599998593330383px;
+    text-align: center;
+    color: #C493FF;
+  }
+
+  .Craft-your-Leadership {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .A-Holistic-Leadership-Development-pink {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0px;
+    text-align-last: center;
+    text-align: center;
+    color: #FF82EB;
+  }
+
+  .Questa-Talent-Development-Roadmap {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: left;
+    text-align-last: left;
+  }
+
+  .Learn-More-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.10935002565383911px;
+    text-align: center;
+    text-wrap: nowrap;
+  }
+
+  .Questa-Talent-Development-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0.5rem;
+    align-items: center;
+  }
+
+  .margin-left-0mob {
+    margin-left: 0;
+  }
+
+  .Keep-up-with-the-div {
+    padding: 0.5rem;
+    text-align-last: left;
+  }
+
+  .Keep-up-with-the-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: left;
+    color: #7E7E7E;
+  }
+
+  .point-check-img {
+    padding-right: 0.5rem;
+    width: 30px;
+  }
+
+  .Need-Analysis-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: left;
+    color: #000000;
+    vertical-align: middle;
+  }
+
+
+  .banner-btn {
+    background: #7A1AF0;
+    border: 2px solid white;
+    outline: 5px solid #7A1AF0;
+    border-radius: 70px;
+    padding: 1rem 2rem;
+  }
+
+  .banner-btn span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.10799998790025711px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .zero-img {
+    position: absolute;
+    bottom: -75px;
+    right: 10px;
+    width: 100px;
+    height: 130px;
+  }
+
+  .takeLook-img {
+    width: 100%;
+  }
+
+  .ROI-of-6x {
+    padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .Invest-in-Leadership {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: left;
+    color: #000000;
+    margin-top: 1.5rem;
+  }
+
+  .Fast-Track-Leadership-grid {
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 10% 90%;
+  }
+
+  .Leadership-Succession-Planning-head {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .As-a-business-owner-or {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+  }
+
+
+  .planning-1-flex-item {
+    margin: 2rem 0;
+    display: block;
+    justify-content: space-between;
+  }
+
+  .planning-1-img-100 {
+    margin-bottom: 1rem;
+    width: 50px;
+    margin-right: 1rem;
+  }
+
+  .planning-1-img-100-last {
+    margin-bottom: 1rem;
+    width: 50px;
+    margin-right: 1rem;
+  }
+
+  .Competitive-edge {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35.22px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .surveyed-companies-state-div {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .surveyed-companies-state-per {
+    font-family: 'Raleway', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 140px;
+    text-align: center;
+    color: #603F87;
+    padding-right: 1rem;
+  }
+
+
+  .surveyed-companies-state-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .img-width-100-mob{
+    width: 100%;
+  }
+}
+
+
+
+
+@media (max-width: 414px) and (min-width: 300px) {
+  .banner-bg-img{
+    padding: 5rem 0 0rem 0; background-image: url('/assets/img/leadership/mobile/banner-img.png'); height: 441px; background-repeat: no-repeat; background-size: contain;
+  }
+}
+
+@media (max-width: 416px) and (min-width: 413px) {
+  .banner-bg-img{
+    padding: 5rem 0 0rem 0; background-image: url('/assets/img/leadership/mobile/banner-img.png'); height: 507px; background-repeat: no-repeat; background-size: contain;
+  }
+}
+
+
+@media (max-width: 429px) and (min-width: 427px) {
+  .banner-bg-img{
+      padding: 6rem 0 0rem 0; background-image: url('/assets/img/leadership/mobile/banner-img.png'); height: 530px; background-repeat: no-repeat; background-size: contain;
+  }
+}
+
+@media (max-width: 394px) and (min-width: 392px) {
+  .banner-bg-img{
+      padding: 6rem 0 0rem 0; background-image: url('/assets/img/leadership/mobile/banner-img.png'); height: 482px; background-repeat: no-repeat; background-size: contain;
+  }
+}
+
+@media (max-width: 385px) and (min-width: 383px) {
+  .banner-bg-img{
+      padding: 6rem 0 0rem 0; background-image: url('/assets/img/leadership/mobile/banner-img.png'); height: 533px; background-repeat: no-repeat; background-size: contain;
+  }
+}
+

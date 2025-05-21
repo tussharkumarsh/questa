@@ -1,0 +1,626 @@
+.banner-btn {
+  background: #7A1AF0;
+  border: 2px solid white;
+  outline: 5px solid #7A1AF0;
+  border-radius: 70px;
+  padding: 1rem 9rem;
+}
+
+.banner-btn span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: -0.10799998790025711px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.youtube-container {
+  overflow: hidden;
+  width: 100%;
+  /* Keep it the right aspect-ratio */
+  aspect-ratio: 16/9;
+  /* No clicking/hover effects */
+  pointer-events: fill;
+
+  border-radius: 20px;
+
+  iframe {
+    /* Extend it beyond the viewport... */
+    width: 300%;
+    height: 100%;
+    /* ...and bring it back again */
+    margin-left: -100%;
+  }
+}
+
+
+
+.pulse {
+  animation: pulse 1s ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+
+
+
+/* width */
+#exampleModal ::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+#exampleModal ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+#exampleModal ::-webkit-scrollbar-thumb {
+  background: #603F87;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#exampleModal ::-webkit-scrollbar-thumb:hover {
+  background: #9449EE;
+}
+
+
+
+
+
+
+
+// testimonial css
+
+.testimonial-box {
+  border: 2px solid #FF82EB;
+  border-radius: 20px;
+  padding: 5rem 3rem;
+}
+
+.col-6-border-right {
+  border-right: 2px solid #FF82EB;
+  padding: 2rem;
+}
+
+.testimonial-box-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -0.2999999523162842px;
+  text-align: left;
+  color: #FF82EB;
+}
+
+.test-padding-1 {
+  padding: 1rem;
+}
+
+.test-padding-2 {
+  padding: 2rem;
+}
+
+// testimonial css
+
+
+@media (max-width: 992px) and (min-width: 300px) {
+
+  // testimonial css start
+  .testimonial-box {
+    border: 2px solid #FF82EB;
+    border-radius: 20px;
+    padding: 1rem 1rem;
+  }
+
+  .col-6-border-right {
+    border-right: none;
+    padding: 1rem;
+  }
+
+  .testimonial-box-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.2999999523162842px;
+    text-align: left;
+    color: #FF82EB;
+  }
+
+  .test-padding-1 {
+    padding: 0rem;
+  }
+
+  .test-padding-2 {
+    padding: 0.5rem;
+  }
+
+  // testimonial css end
+}
+
+
+.show-mobile {
+  display: none;
+}
+
+.hide-mobile {
+  display: block;
+}
+
+.optimazation-section-first {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.margon-4rem {
+  margin: 4rem;
+}
+
+.Develop-Performance-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -0.2999999523162842px;
+  text-align: center;
+  color: #FF82EB;
+}
+
+.Sustainable-organizational-growth-text {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 60px;
+  letter-spacing: -0.2999999523162842px;
+  text-align: center;
+  color: #000000;
+  padding: 3rem 0;
+}
+
+.Optimize-talent-in-four {
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+
+.Optimize-talent-in-four-div {
+  background-color: #FFFFFF;
+  padding: 0 2rem;
+}
+
+.Optimize-talent-in-four-outer-div {
+  padding: 4rem 4rem 4rem 4rem;
+  position: relative;
+
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.Need-Analysis-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.Identify-and-assess {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: left;
+  color: #7E7E7E;
+}
+
+.Test-your-employees-div {
+  padding: 4rem 4rem 4rem 4rem;
+  // border: 4px solid #C493FF;
+  border-top: none;
+}
+
+.setp-3-outer-div {
+  padding: 4rem 4rem 4rem 4rem;
+  // border: 4px solid #C493FF;
+  border-top: none;
+}
+
+.setp-4-outer-div {
+  padding: 4rem 4rem 4rem 4rem;
+  // border: 4px solid #C493FF;
+  border-top: none;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.Your-Success-is-Our-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 74px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #000000;
+}
+
+.padding-2rem-col {
+  padding: 2rem;
+}
+
+.Industry-Expertise-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+}
+
+.line-img {
+  position: absolute;
+  left: 35px;
+  top: 112px;
+  height: 85%;
+}
+
+.line-img-dot-1 {
+  position: absolute;
+  left: 24px;
+  top: 100px;
+}
+
+.line-img-dot-2 {
+  position: absolute;
+  left: 24px;
+  top: 632px;
+}
+
+.line-img-dot-3 {
+  position: absolute;
+  left: 24px;
+  top: 1040px;
+}
+
+.line-img-dot-4 {
+  position: absolute;
+  left: 24px;
+  top: 1785px;
+}
+
+.line-img-dot-5 {
+  position: absolute;
+  left: 24px;
+  top: 2260px;
+}
+
+.line-img-dot-6 {
+  position: absolute;
+  left: 24px;
+  top: 2724px;
+}
+
+
+.Craft-your-dream {
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+
+.Strengths-list {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: center;
+  color: #C493FF;
+  padding: 2rem 0;
+}
+
+
+.show-line-mobile {
+  display: none;
+}
+
+
+
+@media (max-width: 992px) and (min-width: 300px) {
+  .show-mobile {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .hide-for-mobile {
+    display: none;
+  }
+
+  .show-line-mobile {
+    display: block;
+  }
+
+  .Craft-your-dream {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .Strengths-list {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: center;
+    color: #C493FF;
+    padding: 2rem 0;
+  }
+
+  .line-img {
+    position: absolute;
+    left: 5px;
+    top: 95px;
+    height: 71%;
+  }
+
+  .line-img-dot-1 {
+    position: absolute;
+    left: -5px;
+    top: 80px;
+  }
+
+  .line-img-dot-2 {
+    position: absolute;
+    left: -5px;
+    top: 855px;
+  }
+
+  .line-img-dot-3 {
+    position: absolute;
+    left: -5px;
+    top: 2055px;
+  }
+
+  .line-img-dot-4 {
+    position: absolute;
+    left: -5px;
+    top: 2925px;
+  }
+
+  .optimazation-section-first {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+
+  .img-width-mob-100 {
+    width: 100%;
+  }
+
+  .margon-4rem {
+    margin: 1rem;
+  }
+
+  .Develop-Performance-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: -0.2999999523162842px;
+    text-align: center;
+    color: #FF82EB;
+  }
+
+  .Sustainable-organizational-growth-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: -0.2999999523162842px;
+    text-align: center;
+    color: #000000;
+    padding: 2rem 0;
+  }
+
+  .banner-btn {
+    background: #7A1AF0;
+    border: 2px solid white;
+    outline: 5px solid #7A1AF0;
+    border-radius: 70px;
+    padding: 1rem 3rem;
+  }
+
+  .banner-btn span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.10799998790025711px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .flawar-img-width {
+    width: 75px;
+  }
+
+  .Optimize-talent-in-four {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .Optimize-talent-in-four-div {
+    background-color: #FFFFFF;
+    padding: 1px 0rem;
+  }
+
+  .Optimize-talent-in-four-outer-div {
+    padding: 4rem 0.5rem 4rem 0.5rem;
+    position: relative;
+    // border: 4px solid #C493FF;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+
+  .Need-Analysis-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: #000000;
+
+  }
+
+  .Identify-and-assess {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: left;
+    color: #7E7E7E;
+  }
+
+  .Test-your-employees-div {
+    padding: 4rem 0.5rem 4rem 0.5rem;
+    // border: 4px solid #C493FF;
+    border-top: none;
+  }
+
+  .setp-3-outer-div {
+    padding: 4rem 0.5rem 4rem 0.5rem;
+    // border: 4px solid #C493FF;
+    border-top: none;
+  }
+
+  .setp-4-outer-div {
+    padding: 4rem 0.5rem 4rem 0.5rem;
+    // border: 4px solid #C493FF;
+    border-top: none;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+  .Your-Success-is-Our-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .padding-2rem-col {
+    padding: 0.5rem;
+  }
+
+  .Industry-Expertise-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .success-1-img {
+    width: 50px;
+  }
+}
+
+
+
+
+@media (max-width: 414px) and (min-width: 300px) {
+  .banner-bg-img {
+    padding: 5rem 0 0rem 0;
+    background-image: url('/assets/img/talent-optimisation/mobile/banner-img.png');
+    height: 441px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 416px) and (min-width: 413px) {
+  .banner-bg-img {
+    padding: 5rem 0 0rem 0;
+    background-image: url('/assets/img/talent-optimisation/mobile/banner-img.png');
+    height: 507px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 429px) and (min-width: 427px) {
+  .banner-bg-img {
+    padding: 6rem 0 0rem 0;
+    background-image: url('/assets/img/talent-optimisation/mobile/banner-img.png');
+    height: 530px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 394px) and (min-width: 392px) {
+  .banner-bg-img {
+    padding: 6rem 0 0rem 0;
+    background-image: url('/assets/img/talent-optimisation/mobile/banner-img.png');
+    height: 482px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 385px) and (min-width: 383px) {
+  .banner-bg-img {
+    padding: 6rem 0 0rem 0;
+    background-image: url('/assets/img/talent-optimisation/mobile/banner-img.png');
+    height: 533px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

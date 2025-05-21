@@ -1,0 +1,524 @@
+.banner-btn {
+  background: #7A1AF0;
+  border: 2px solid white;
+  outline: 5px solid #7A1AF0;
+  border-radius: 70px;
+  padding: 1rem 9rem;
+}
+
+.banner-btn span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: -0.10799998790025711px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.youtube-container {
+  overflow: hidden;
+  width: 100%;
+  /* Keep it the right aspect-ratio */
+  aspect-ratio: 16/9;
+  /* No clicking/hover effects */
+  pointer-events: fill;
+
+  border-radius: 20px;
+
+  iframe {
+    /* Extend it beyond the viewport... */
+    width: 300%;
+    height: 100%;
+    /* ...and bring it back again */
+    margin-left: -100%;
+  }
+}
+
+
+.bounce2 {
+  animation: bounce2 5s ease-in-out;
+}
+
+@keyframes bounce2 {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-100px);
+  }
+
+  60% {
+    transform: translateY(-65px);
+  }
+}
+
+
+
+
+
+/* width */
+#exampleModal ::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+#exampleModal ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+#exampleModal ::-webkit-scrollbar-thumb {
+  background: #603F87;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#exampleModal ::-webkit-scrollbar-thumb:hover {
+  background: #9449EE;
+}
+
+
+
+
+
+
+// testimonial css
+
+.testimonial-box {
+  border: 2px solid #FF82EB;
+  border-radius: 20px;
+  padding: 5rem 3rem;
+}
+
+.col-6-border-right {
+  border-right: 2px solid #FF82EB;
+  padding: 2rem;
+}
+
+.testimonial-box-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -0.2999999523162842px;
+  text-align: left;
+  color: #FF82EB;
+}
+
+.test-padding-1 {
+  padding: 1rem;
+}
+
+.test-padding-2 {
+  padding: 2rem;
+}
+
+// testimonial css
+
+
+@media (max-width: 992px) and (min-width: 300px) {
+
+  // testimonial css start
+  .testimonial-box {
+    border: 2px solid #FF82EB;
+    border-radius: 20px;
+    padding: 1rem 1rem;
+  }
+
+  .col-6-border-right {
+    border-right: none;
+    padding: 1rem;
+  }
+
+  .testimonial-box-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.2999999523162842px;
+    text-align: left;
+    color: #FF82EB;
+  }
+
+  .test-padding-1 {
+    padding: 0rem;
+  }
+
+  .test-padding-2 {
+    padding: 0.5rem;
+  }
+
+  // testimonial css end
+}
+
+
+
+.show-mobile {
+  display: none;
+}
+
+.hide-mobile {
+  display: block;
+}
+
+.Specializing-in-section {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.specializing-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid-margin {
+  margin: 6rem 0;
+}
+
+.Capture-Exceptional-section {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.Capture-Exceptional-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: center;
+  color: #000000;
+}
+
+.Consultative-card {
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.Streamline-img {
+  width: 55%;
+}
+
+.Streamline-your-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -0.2999999523162842px;
+  text-align: center;
+  color: #FF82EB;
+}
+
+.line-arrow-img {
+  margin: 5rem 0;
+}
+
+.Recruitment-text {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: -0.1679999828338623px;
+  text-align: left;
+  color: #C493FF;
+}
+
+.Recruitment-text-number {
+  font-family: 'Raleway', sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 117.4px;
+  text-align: left;
+}
+
+.Streamline-your-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.We-offer-solutions-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+}
+
+.solution-1-img{
+  position: absolute; top: -75px; left: 125px;
+}
+
+.solution-1-para{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.11399998515844345px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.solution-1-card{
+  height: 520px; background-color: #C493FF; border-radius: 20px; position: relative; padding: 6rem 3rem 3rem 3rem;
+}
+
+.solution-1-main-div{
+  padding: 5rem 0;
+}
+
+.section-We-offer-solutions{
+  padding-top: 5rem; padding-bottom: 5rem; background: linear-gradient(68.36deg, #F3E8FF 0%, rgba(243, 232, 255, 0) 124.56%);
+}
+
+.Are-you-looking-heading{
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+
+.Executive-Search-services-text{
+  color: #603F87; font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 92px;
+  text-align: center;
+}
+
+.blog-posting{
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: center;
+}
+
+@media (max-width: 992px) and (min-width: 300px) {
+  .show-mobile {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .Specializing-in-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .specializing-grid {
+    display: block;
+    justify-content: space-around;
+  }
+
+  .specializing-grid-img {
+    width: 60px;
+    margin: 1rem;
+  }
+
+  .grid-margin {
+    margin: 1rem 0;
+  }
+
+  .Capture-Exceptional-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .Capture-Exceptional-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .Consultative-card {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .Streamline-img {
+    width: 100%;
+  }
+
+  .Streamline-your-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.2999999523162842px;
+    text-align: center;
+    color: #FF82EB;
+  }
+
+  .line-arrow-img {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .Recruitment-text {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.1679999828338623px;
+    text-align: center;
+    text-align-last: center;
+    color: #C493FF;
+  }
+
+  .Recruitment-text-number {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    text-align-last: center;
+  }
+
+  .Streamline-your-section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .We-offer-solutions-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .solution-1-img{
+    position: absolute;
+    top: -50px;
+    left: 145px;
+    width: 100px;
+  }
+
+  .solution-1-para{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.11399998515844345px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .solution-1-card{
+    height: 460px; background-color: #C493FF; border-radius: 20px; position: relative; padding: 6rem 3rem 3rem 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .solution-1-main-div{
+    padding: 2rem 0 0 0;
+  }
+
+  .section-We-offer-solutions{
+    padding-top: 3rem; padding-bottom: 1rem; background: linear-gradient(68.36deg, #F3E8FF 0%, rgba(243, 232, 255, 0) 124.56%);
+  }
+
+  .Are-you-looking-heading{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .Executive-Search-services-text{
+    color: #603F87; font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .banner-btn {
+    background: #7A1AF0;
+    border: 2px solid white;
+    outline: 5px solid #7A1AF0;
+    border-radius: 70px;
+    padding: 1rem 3rem;
+  }
+  
+  .banner-btn span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.10799998790025711px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .blog-posting{
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+  }
+}
+
+
+
+
+@media (max-width: 414px) and (min-width: 300px) {
+  .banner-bg-img{
+    padding: 5rem 0 0rem 0; background-image: url('/assets/img/search-executive/mobile/banner-img.png'); height: 441px; background-repeat: no-repeat; background-size: contain;
+  }
+}
+
+@media (max-width: 416px) and (min-width: 413px) {
+  .banner-bg-img{
+    padding: 5rem 0 0rem 0; background-image: url('/assets/img/search-executive/mobile/banner-img.png'); height: 507px; background-repeat: no-repeat; background-size: contain;
+  }
+}
+
+
+
+@media (max-width: 429px) and (min-width: 427px) {
+  .banner-bg-img{
+      padding: 6rem 0 0rem 0; background-image: url('/assets/img/search-executive/mobile/banner-img.png'); height: 530px; background-repeat: no-repeat; background-size: contain;
+  }
+}
+
+@media (max-width: 394px) and (min-width: 392px) {
+  .banner-bg-img{
+      padding: 6rem 0 0rem 0; background-image: url('/assets/img/search-executive/mobile/banner-img.png'); height: 482px; background-repeat: no-repeat; background-size: contain;
+  }
+}
+
+@media (max-width: 385px) and (min-width: 383px) {
+  .banner-bg-img{
+      padding: 6rem 0 0rem 0; background-image: url('/assets/img/search-executive/mobile/banner-img.png'); height: 533px; background-repeat: no-repeat; background-size: contain;
+  }
+}

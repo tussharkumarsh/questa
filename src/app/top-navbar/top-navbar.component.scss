@@ -1,0 +1,157 @@
+.menu-items {
+    color: #603F87;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.nav-item {
+    padding-left: 2rem;
+}
+
+.menu {
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999999999999999;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    text-align: left !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #fff !important;
+    background-color: #603F87
+}
+
+.bg-transparent-1 {
+    background-color: transparent;
+}
+
+.company-logo {
+    margin: 0 3rem;
+}
+
+.menu-details {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: left;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.sub-menu-details {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-offset: 0%;
+    text-decoration-thickness: 0%;
+    text-decoration-skip-ink: auto;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu-details:hover {
+    text-decoration-color: #603F87;
+    font-size: 17px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.sub-menu-details:hover {
+    text-decoration: underline;
+    text-decoration-color: #603F87;
+    font-size: 17px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.login-button {
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 0.5rem 3rem;
+    border: 2px solid #7A1AF0
+}
+
+.show-mobile {
+    display: none;
+}
+
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* Prevents menu from jumping down */
+}
+
+.dropdown-menu {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-menu-div {
+    background-color: #ffffffe6;
+    width: 300px;
+}
+
+@media (max-width: 992px) and (min-width: 300px) {
+
+    .show-mobile {
+        display: block;
+    }
+
+    .login-button {
+        display: none;
+        border-radius: 30px;
+        background-color: transparent;
+        padding: 0.5rem 3rem;
+        border: 2px solid #7A1AF0
+    }
+
+    .bg-transparent-1 {
+        background-color: transparent;
+    }
+
+    .nav-item {
+        padding-left: 1rem;
+    }
+
+    .dropdown-menu-div {
+        background-color: #ffffffe6;
+        width: 100%;
+    }
+
+    ul {
+        text-align-last: left;
+    }
+
+    .company-logo {
+        margin: auto;
+        width: 100px;
+    }
+
+    .navbar-brand {
+        margin: 0;
+    }
+
+    #navbarTogglerDemo01 {
+        padding: 3rem 0;
+        background-color: #fff;
+    }
+}
