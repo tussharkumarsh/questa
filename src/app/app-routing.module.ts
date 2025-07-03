@@ -31,6 +31,13 @@ const routes: Routes = [
   { path: 'our-platform', component: OurPlatformComponent },
   { path: 'workshop', component: WorkshopComponent },
 
+  {
+    path: 'demo-assessment',
+    loadChildren: () =>
+      import('./demo-assessment/demo-assessment.module').then(m => m.DemoAssessmentModule)
+  },
+
+
   { path: '', redirectTo: '', pathMatch: 'full' }, // Default route
 ];
 

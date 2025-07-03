@@ -1,0 +1,216 @@
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-column {
+    width: 30%;
+    background: linear-gradient(336.21deg, #FFA4DD -180.9%, #3C245B 45.51%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
+}
+
+.logo img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+/* RIGHT COLUMN */
+.right-column {
+    width: 70%;
+    background-color: #ffe4b5;
+    /* or use #ffe3b3 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+.step-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.step-dot.active {
+    background-color: #ff2ad4;
+}
+
+.btn-pink {
+    background-color: #ff2ad4;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.text-pink {
+    color: #FF82EB;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.heading-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #FFAC2F;
+}
+
+.question-no {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FF82EB;
+    margin-bottom: 3rem;
+}
+
+.question-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+}
+
+
+.answer-option-active {
+    width: 250px;
+    height: 120px;
+    border-radius: 16px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    border: 2px solid #FF52E3;
+}
+
+.answer-option {
+    width: 250px;
+    height: 120px;
+    border-radius: 16px;
+    background-color: #FF52E3;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    border: 2px solid #FF52E3;
+}
+
+.answer-option:hover {
+    background-color: #FF52E3 !important;
+    color: #fff !important;
+}
+
+.banner-btn {
+    background: #7A1AF0;
+    border: 2px solid white;
+    outline: 5px solid #7A1AF0;
+    border-radius: 70px;
+    padding: 1rem 6rem;
+}
+
+.banner-btn span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: -0.10799998790025711px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stepper {
+    position: relative;
+    margin-top: 30px;
+    padding-left: 0px;
+}
+
+.stepper::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    /* Center of dot (half of width: 14px) */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    border-left: 2px dashed rgba(255, 255, 255, 0.4);
+    z-index: 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.step .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid white;
+    margin-right: 10px;
+    z-index: 2;
+}
+
+.step.active .dot {
+    background-color: #ff2ad4;
+    border-color: #ff2ad4;
+}
+
+.step.completed .dot {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.step .label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+}
+
+.step.active .label {
+    color: #ff2ad4;
+    font-weight: bold;
+}
+
+.step.completed .label {
+    color: #28a745;
+}
