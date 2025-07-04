@@ -1,33 +1,16 @@
 <div class="main-container">
     <!-- Left Column -->
     <div class="left-column">
-        <div class="logo"> <!-- Adjust logo styling or use an <img> if needed -->
+        <div class="logo">
             <img src="assets/img/logo-white.png" alt="Logo" />
         </div>
 
-        <!-- <div style="padding-left: 2rem;">
-            <h5 class="heading-text mt-5">Demo Questionnaire</h5>
-            <ul class="list-unstyled mt-4">
-                <li *ngFor="let q of questions; let i = index" class="my-3">
-                    <span [class.active]="i === currentIndex" class="step-dot me-2"></span>
-                    <span [ngClass]="{ 'text-pink': i === currentIndex, 'text-white': i !== currentIndex }">
-                        Question {{ i + 1 }}
-                    </span>
-                </li>
-                <li class="my-3 text-pink">Result</li>
-            </ul>
-        </div> -->
-
-
-        <div class="sidebar">
+        <div class="sidebar mt-5">
             <h5 class="text-warning">Demo Questionnaire</h5>
 
             <div class="stepper">
                 <ng-container *ngFor="let q of questions; let i = index">
-                    <div class="step" [ngClass]="{
-          active: i === currentIndex,
-          completed: selectedAnswers[i]
-        }">
+                    <div class="step" [ngClass]="{ active: i === currentIndex, completed: selectedAnswers[i] }">
                         <div class="dot"></div>
                         <span class="label">Question {{ i + 1 }}</span>
                     </div>
@@ -48,6 +31,11 @@
     <div class="right-column">
         <div class="right-content">
 
+            <div class="mb-5">
+                <h2 *ngIf="name">Welcome, {{ name }}!</h2>
+            </div>
+
+
             <h6 class="text-center question-no">Question {{ currentIndex + 1 }}</h6>
             <h3 class="text-center question-text">{{ questions[currentIndex].question }}</h3>
 
@@ -65,8 +53,14 @@
 
 
             <div class="d-flex justify-content-center mt-5">
-                <button class="banner-btn" (click)="nextQuestion()">
+                <button class="banner-btn" *ngIf="currentIndex < questions.length - 1"
+                    [disabled]="selectedOptionIndex === null" (click)="nextQuestion()">
                     <span>NEXT QUESTION </span>
+                </button>
+
+                <button class="banner-btn" *ngIf="currentIndex === questions.length - 1"
+                    [disabled]="selectedOptionIndex === null" (click)="submitAssessment()">
+                    <span> Show Result </span>
                 </button>
             </div>
 

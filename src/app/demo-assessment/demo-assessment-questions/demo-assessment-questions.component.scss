@@ -131,17 +131,31 @@ button:focus {
     outline: 5px solid #7A1AF0;
     border-radius: 70px;
     padding: 1rem 6rem;
+
+    span {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 31px;
+        letter-spacing: -0.10799998790025711px;
+        text-align: center;
+        color: #fff;
+    }
 }
 
-.banner-btn span {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 31px;
-    letter-spacing: -0.10799998790025711px;
-    text-align: center;
-    color: #fff;
+.banner-btn:disabled {
+    background: #7A1AF0;
+    border: 2px solid white;
+    outline: 5px solid #7A1AF0;
+    border-radius: 70px;
+    padding: 1rem 6rem;
+    cursor: not-allowed;
+
+    span {
+        color: rgba(255, 255, 255, 0.5);
+    }
 }
+
 
 
 

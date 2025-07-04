@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DemoAssessmentDataService } from '../demo-assessment-data.service';
 
 @Component({
   selector: 'app-demo-assessment-result',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoAssessmentResultComponent implements OnInit {
 
-  constructor() { }
+  answers: any[] = [];
+  userData: any = {};
+
+
+  constructor(
+    private dataService: DemoAssessmentDataService
+  ) { }
 
   ngOnInit(): void {
+    this.answers = this.dataService.getUserAnswers();
+    this.userData = this.dataService.getUserInfo();
+
+    console.log('User Answers:', this.answers);
+    console.log('User Data:', this.userData);
   }
 
 }

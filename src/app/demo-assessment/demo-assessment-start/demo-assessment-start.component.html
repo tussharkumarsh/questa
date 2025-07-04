@@ -21,16 +21,29 @@
             <div class="line-3">— Action, Thinking, or Feeling —</div>
             <div class="line-2">style drives your behaviour.</div>
 
-            <form class="my-5">
-                <input type="text" placeholder="Your Full Name" />
-                <input type="text" placeholder="Email or Phone Number" />
+            <form class="my-5" (ngSubmit)="startAssessment()" novalidate>
+                <input type="text" [(ngModel)]="name" name="name" required placeholder="Your Full Name" />
+                <div *ngIf="formSubmitted && !name.trim()" class="text-danger">
+                    Name is required.
+                </div>
 
-                <br>
-                <br>
-                <br>
-                <button class="banner-btn">
-                    <span> GET STARTED WITH THE ASSESSMENT </span>
-                </button>
+
+                <input type="email" [(ngModel)]="email" name="email" required placeholder="Email or Phone Number" />
+                <div *ngIf="formSubmitted && !email.trim()" class="text-danger">
+                    Email is required.
+                </div>
+                <div *ngIf="formSubmitted && !email.trim()" class="text-danger">
+                    Email is required.
+                </div>
+                <div *ngIf="formSubmitted && emailError" class="text-danger">
+                    {{ emailError }}
+                </div>
+                <div class="my-5">
+                    <button class="banner-btn" type="submit"
+                        [disabled]="formSubmitted && !email.trim() && !name.trim()">
+                        <span> GET STARTED WITH THE ASSESSMENT </span>
+                    </button>
+                </div>
 
             </form>
         </div>
