@@ -1,71 +1,103 @@
 <div class="main-container">
-    <!-- Left Column -->
-    <div class="left-column">
-        <div class="logo">
-            <img src="assets/img/logo-white.png" alt="Logo" />
-        </div>
-        <div class="left-image text-center">
-            <img class="" style="width: 200px;" src="assets/img/demo-assesment/success.svg" alt="">
-            <p class="thank-text">
-                Thank you for taking <br> the short assessment!
-            </p>
-        </div>
-
-        <p class="mt-5"></p>
+  <!-- Left Column -->
+  <div class="left-column">
+    <div class="logo">
+      <img src="assets/img/logo-white.png" alt="Logo" />
+    </div>
+    <div class="left-image text-center">
+      <img
+        class=""
+        style="width: 200px"
+        src="assets/img/demo-assesment/success.svg"
+        alt=""
+      />
+      <p class="thank-text">
+        Thank you for taking <br />
+        the short assessment!
+      </p>
     </div>
 
-    <!-- Right Column -->
-    <div class="right-column">
-        <div class="right-content">
+    <p class="mt-5"></p>
+  </div>
 
-            <p class=" my-2" style="font-family: Raleway;
-font-weight: 600;
-font-style: SemiBold;
-font-size: 32px;
-leading-trim: NONE;
-line-height: 36px;
-letter-spacing: 0%;
-text-align: center;
-">
-                Basis the answers you have given,
-            </p>
-            <p style="font-family: Raleway;
-font-weight: 600;
-font-style: SemiBold;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 36px;
-letter-spacing: 0%;
-text-align: center;
-margin-bottom: 2rem;
-">
-                it seems like your dominant style is
-            </p>
+  <!-- Right Column -->
+  <div class="right-column">
+    <div class="right-content">
+      <p
+        class="my-2"
+        style="
+          font-family: Raleway;
+          font-weight: 600;
+          font-style: SemiBold;
+          font-size: 32px;
+          leading-trim: NONE;
+          line-height: 36px;
+          letter-spacing: 0%;
+          text-align: center;
+        "
+      >
+        Basis the answers you have given,
+      </p>
+      <p
+        style="
+          font-family: Raleway;
+          font-weight: 600;
+          font-style: SemiBold;
+          font-size: 24px;
+          leading-trim: NONE;
+          line-height: 36px;
+          letter-spacing: 0%;
+          text-align: center;
+          margin-bottom: 2rem;
+        "
+      >
+        it seems like your dominant style is
+      </p>
 
-            <p class="result-text-marks my-4">
-                <img src="assets/img/demo-assesment/clapperboard.png" alt="">Action <span> 66% </span>
-            </p>
+      <p class="result-text-marks my-4">
+        <img src="assets/img/demo-assesment/clapperboard.png" alt="" />
+        {{ scoreMap.dominantCentreOfExpression }}
+        <span>
+          {{ getPercentage(scoreMap[scoreMap.dominantCentreOfExpression]) }}%
+        </span>
+      </p>
 
-            <div class="result-text my-2 ">
-                Other centres of expressions <img src="assets/img/demo-assesment/heart.png" class="px-2" alt=""> Feeling
-                53% <img src="assets/img/demo-assesment/mind.png" class="px-2" alt=""> Thinking 27%
-            </div>
+      <div class="result-text my-2">
+        Other centres of expressions
 
-            <img src="assets/img/demo-assesment/Line.png" class="w-100 my-4" alt="">
+        <ng-container *ngIf="scoreMap.dominantCentreOfExpression !== 'Action'">
+          <img src="assets/img/demo-assesment/mind.png" class="px-2" /> Action
+          {{ getPercentage(scoreMap.Action) }}%
+        </ng-container>
 
-            <p class="result-text mt-3 mb-5">
-                You’re instinctively hands-on and warm. You move fast, but not without tuning into others—relationships
-                matter deeply. You check the emotional temperature of a room before sorting through the logic of it all.
-            </p>
+        <ng-container *ngIf="scoreMap.dominantCentreOfExpression !== 'Feeling'">
+          <img src="assets/img/demo-assesment/heart.png" class="px-2" /> Feeling
+          {{ getPercentage(scoreMap.Feeling) }}%
+        </ng-container>
 
-            <p class="result-text my-5">
-                Curious to dive deeper into your personality patterns?
-            </p>
+        <ng-container
+          *ngIf="scoreMap.dominantCentreOfExpression !== 'Thinking'"
+        >
+          <img src="assets/img/demo-assesment/mind.png" class="px-2" /> Thinking
+          {{ getPercentage(scoreMap.Thinking) }}%
+        </ng-container>
+      </div>
 
-            <button class="banner-btn">
-                <span> Take Questa's Full Personality Assessment </span>
-            </button>
+      <img src="assets/img/demo-assesment/Line.png" class="w-100 my-4" alt="" />
 
-        </div>
+      <p class="result-text mt-3 mb-5">
+        You’re instinctively hands-on and warm. You move fast, but not without
+        tuning into others—relationships matter deeply. You check the emotional
+        temperature of a room before sorting through the logic of it all.
+      </p>
+
+      <p class="result-text my-5">
+        Curious to dive deeper into your personality patterns?
+      </p>
+
+      <button class="banner-btn">
+        <span> Take Questa's Full Personality Assessment </span>
+      </button>
     </div>
+  </div>
 </div>

@@ -5,10 +5,9 @@ import { DemoAssessmentDataService } from '../demo-assessment-data.service';
 @Component({
   selector: 'app-demo-assessment-start',
   templateUrl: './demo-assessment-start.component.html',
-  styleUrls: ['./demo-assessment-start.component.scss']
+  styleUrls: ['./demo-assessment-start.component.scss'],
 })
 export class DemoAssessmentStartComponent implements OnInit {
-
   name: string = '';
   email: string = '';
   formSubmitted: boolean = false;
@@ -16,17 +15,37 @@ export class DemoAssessmentStartComponent implements OnInit {
   constructor(
     private router: Router,
     private dataService: DemoAssessmentDataService
-  ) { }
+  ) {}
 
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 
   emailError: string = '';
 
   isValidWorkEmail(email: string): boolean {
-    const blockedDomains = ['gmail.com', 'yahoo.com', 'outlook.com', 'hotmail.com'];
+    const blockedDomains = [
+      'gmail.com',
+      'yahoo.com',
+      'outlook.com',
+      'hotmail.com',
+      'icloud.com',
+      'aol.com',
+      'mail.com',
+      'protonmail.com',
+      'yandex.com',
+      'zoho.com',
+      'gmx.com',
+      'rediffmail.com',
+      'live.com',
+      'msn.com',
+      'hotmail.co.in',
+      'hotmail.co.uk',
+      'yahoo.co.in',
+      'yahoo.co.uk',
+      'yahoo.com.au',
+      'yahoo.com.sg',
+      'yahoo.com.ph',
+    ];
+
     const domain = email.split('@')[1]?.toLowerCase();
     return typeof domain === 'string' && !blockedDomains.includes(domain);
   }
@@ -55,5 +74,4 @@ export class DemoAssessmentStartComponent implements OnInit {
     this.dataService.setUserData(this.name, this.email);
     this.router.navigate(['/demo-assessment/questions']);
   }
-
 }
