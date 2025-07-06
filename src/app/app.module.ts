@@ -15,7 +15,6 @@ import { CountUpModule } from 'ngx-countup';
 import { LeadershipDevelopmentComponent } from './leadership-development/leadership-development.component';
 import { TalentReimaginedComponent } from './talent-reimagined/talent-reimagined.component';
 import { ExecutiveSearchComponent } from './executive-search/executive-search.component';
-import { NgxImageComparisonSliderModule } from 'ngx-image-comparison-slider';
 import { TalentOptimisationComponent } from './talent-optimisation/talent-optimisation.component';
 import { CoachingComponent } from './coaching/coaching.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -53,7 +52,6 @@ import { WorkshopComponent } from './workshop/workshop.component';
     BrowserAnimationsModule,
     CarouselModule,
     CountUpModule,
-    NgxImageComparisonSliderModule,
 
     HttpClientModule,
     FormsModule,
