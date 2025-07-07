@@ -30,19 +30,13 @@
                 </div>
 
 
-                <input type="email" [(ngModel)]="email" name="email" required placeholder="Email or Phone Number" />
-                <div *ngIf="formSubmitted && !email.trim()" class="text-danger">
-                    Email is required.
-                </div>
-                <div *ngIf="formSubmitted && !email.trim()" class="text-danger">
-                    Email is required.
-                </div>
-                <div *ngIf="formSubmitted && emailError" class="text-danger">
-                    {{ emailError }}
+                <input type="text" [(ngModel)]="contact" name="contact" required placeholder="Work Email or Phone Number" />
+                <div *ngIf="formSubmitted && !checkContactValidation().valid" class="text-danger">
+                    {{ checkContactValidation().error }}
                 </div>
                 <div class="my-5">
                     <button class="banner-btn" type="submit"
-                        [disabled]="formSubmitted && !email.trim() && !name.trim()">
+                        [disabled]="formSubmitted && !checkContactValidation().valid && !name.trim()">
                         <span> GET STARTED WITH THE ASSESSMENT </span>
                     </button>
                 </div>

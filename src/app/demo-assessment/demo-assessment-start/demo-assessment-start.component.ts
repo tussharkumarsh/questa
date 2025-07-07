@@ -9,9 +9,8 @@ import { DemoAssessmentDataService } from '../demo-assessment-data.service';
 })
 export class DemoAssessmentStartComponent implements OnInit {
   name: string = '';
-  email: string = '';
+  contact: string = '';
   formSubmitted: boolean = false;
-  emailError: string = '';
   userData: { name: string; email: string } = { name: '', email: '' };
 
   constructor(
@@ -67,21 +66,31 @@ export class DemoAssessmentStartComponent implements OnInit {
 
   startAssessment(): void {
     this.formSubmitted = true;
-    this.emailError = '';
 
-    if (!this.name.trim() || !this.email.trim()) return;
+    if (!this.name.trim() || !this.checkContactValidation().valid) return;
 
-    if (!this.isEmailFormatValid(this.email)) {
-      this.emailError = 'Enter a valid email format.';
-      return;
-    }
-
-    if (!this.isValidWorkEmail(this.email)) {
-      this.emailError = 'Only work email IDs are allowed.';
-      return;
-    }
-
-    this.dataService.setUserData(this.name, this.email);
+    this.dataService.setUserData(this.name, this.contact);
     this.router.navigate(['/demo-assessment/questions']);
+  }
+
+  checkContactValidation(): { valid: boolean; error: string } {
+    // work email validation or phone number validation
+    if (!this.contact.trim()) {
+      return { valid: false, error: 'Email or Phone Number is required.' };
+    }
+
+    if (this.contact.includes('@')) {
+      // If contact contains '@', treat it as an email
+      if (!this.isEmailFormatValid(this.contact)) {
+        return { valid: false, error: 'Enter a valid email format.' };
+      }
+      if (!this.isValidWorkEmail(this.contact)) {
+        return { valid: false, error: 'Only work email IDs are allowed.' };
+      }
+      // if user entered phone number, if number validation is needed, add it here
+    } else if (!this.contact.match(/^[6789]\d{9}$/)) {
+      return { valid: false, error: 'Please enter a valid phone number' };
+    }
+    return { valid: true, error: '' };
   }
 }
