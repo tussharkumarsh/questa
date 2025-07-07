@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { interpretationData } from './data/interpretation';
 
 @Injectable({
   providedIn: 'root',
@@ -190,5 +191,9 @@ export class DemoAssessmentDataService {
       fullname: name,
       emailOrPhoneNumber: contact,
     });
+  }
+
+  getInterpretation() {
+    return interpretationData;
   }
 }

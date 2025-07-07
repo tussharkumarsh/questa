@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DemoAssessmentDataService } from '../demo-assessment-data.service';
 import { Router } from '@angular/router';
+import { interpretationData } from '../data/interpretation';
 
 @Component({
   selector: 'app-demo-assessment-result',
@@ -9,6 +10,10 @@ import { Router } from '@angular/router';
 })
 export class DemoAssessmentResultComponent implements OnInit {
   answers: any[] = [];
+  interpretation: { interpretation: string; suspenseStatement: string } = {
+    interpretation: '',
+    suspenseStatement: '',
+  };
   userData: { name: string; email: string } = { name: '', email: '' };
   scoreMap: {
     Action: number;
@@ -39,8 +44,9 @@ export class DemoAssessmentResultComponent implements OnInit {
     this.userData = this.dataService.getUserInfo();
     this.questions = this.dataService.getQuestions();
     this.calculateScore();
+    this.getInterpretation();
 
-    this.sendUserToCorrectPage();
+    // this.sendUserToCorrectPage();
   }
 
   sendUserToCorrectPage() {
@@ -80,6 +86,30 @@ export class DemoAssessmentResultComponent implements OnInit {
     } else if (maxScore === this.scoreMap.Thinking) {
       this.scoreMap.dominantCentreOfExpression = 'Thinking';
     }
+  }
+
+  getInterpretation() {
+    const interpretationData = this.dataService.getInterpretation();
+    let key: '123' | '132' | '213' | '231' | '312' | '321' = '123';
+    // key = highest score first + middle score second + lowest score last and in case of tie, use the order Action, Feeling, Thinking
+    if (this.scoreMap.dominantCentreOfExpression === 'Action') {
+      key = '123';
+      if (this.scoreMap.Thinking > this.scoreMap.Feeling) {
+        key = '132'; // Action > Thinking > Feeling
+      }
+    } else if (this.scoreMap.dominantCentreOfExpression === 'Feeling') {
+      key = '213';
+      if (this.scoreMap.Thinking > this.scoreMap.Action) {
+        key = '231'; // Feeling > Thinking > Action
+      }
+    } else {
+      key = '312';
+      if (this.scoreMap.Feeling > this.scoreMap.Action) {
+        key = '321'; // Thinking > Action > Feeling
+      }
+    }
+
+    this.interpretation = interpretationData[key];
   }
 
   getPercentage(score: number): number {
