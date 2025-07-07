@@ -5,31 +5,49 @@ import { DemoAssessmentDataService } from '../demo-assessment-data.service';
 @Component({
   selector: 'app-demo-assessment-questions',
   templateUrl: './demo-assessment-questions.component.html',
-  styleUrls: ['./demo-assessment-questions.component.scss']
+  styleUrls: ['./demo-assessment-questions.component.scss'],
 })
 export class DemoAssessmentQuestionsComponent implements OnInit {
-
-  name: string = '';
-  email: string = '';
+  userData: { name: string; email: string } = { name: '', email: '' };
   currentIndex = 0;
-  selectedAnswers: { question: string; selectedOption: string; center_of_expression: string; }[] = [];
+  selectedAnswers: {
+    question: string;
+    selectedOption: string;
+    center_of_expression: string;
+  }[] = [];
   selectedOptionIndex: number | null = null;
 
-  questions: any[] = [];
-
+  questions: {
+    question: string;
+    options: {
+      center_of_expression: string;
+      value: string;
+    }[];
+  }[] = [];
+  answers: any[] = [];
 
   constructor(
     private dataService: DemoAssessmentDataService,
     private router: Router
-  ) { }
+  ) {}
 
   ngOnInit(): void {
-    const userInfo = this.dataService.getUserInfo();
-    this.name = userInfo.name;
-    this.email = userInfo.email;
+    this.userData = this.dataService.getUserInfo();
     this.questions = this.dataService.getQuestions();
+    this.answers = this.dataService.getUserAnswers();
+
+    this.sendUserToCorrectPage();
   }
 
+  sendUserToCorrectPage() {
+    if (!this.userData.name || !this.userData.email) {
+      // If user data is not set, redirect to the form page
+      this.router.navigate(['/demo-assessment']);
+    } else if (this.questions.length === this.answers.length) {
+      // If no questions are available, redirect to the form page
+      this.router.navigate(['/demo-assessment/result']);
+    }
+  }
 
   selectOption(index: number) {
     this.selectedOptionIndex = index;
@@ -44,7 +62,7 @@ export class DemoAssessmentQuestionsComponent implements OnInit {
     this.selectedAnswers[this.currentIndex] = {
       question: currentQ.question,
       selectedOption: selected.value,
-      center_of_expression: selected.center_of_expression
+      center_of_expression: selected.center_of_expression,
     };
 
     this.selectedOptionIndex = null;
@@ -65,11 +83,10 @@ export class DemoAssessmentQuestionsComponent implements OnInit {
     this.selectedAnswers[this.currentIndex] = {
       question: currentQ.question,
       selectedOption: selected.value,
-      center_of_expression: selected.center_of_expression
+      center_of_expression: selected.center_of_expression,
     };
 
     this.dataService.setUserAnswers(this.selectedAnswers);
     this.router.navigate(['/demo-assessment/result']);
   }
-
 }

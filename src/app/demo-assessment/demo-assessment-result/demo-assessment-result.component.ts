@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DemoAssessmentDataService } from '../demo-assessment-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-demo-assessment-result',
@@ -8,7 +9,7 @@ import { DemoAssessmentDataService } from '../demo-assessment-data.service';
 })
 export class DemoAssessmentResultComponent implements OnInit {
   answers: any[] = [];
-  userData: any = {};
+  userData: { name: string; email: string } = { name: '', email: '' };
   scoreMap: {
     Action: number;
     Feeling: number;
@@ -20,16 +21,39 @@ export class DemoAssessmentResultComponent implements OnInit {
     Thinking: 0,
     dominantCentreOfExpression: 'Action',
   };
+  questions: {
+    question: string;
+    options: {
+      center_of_expression: string;
+      value: string;
+    }[];
+  }[] = [];
 
-  constructor(private dataService: DemoAssessmentDataService) {}
+  constructor(
+    private dataService: DemoAssessmentDataService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.answers = this.dataService.getUserAnswers();
     this.userData = this.dataService.getUserInfo();
+    this.questions = this.dataService.getQuestions();
     this.calculateScore();
 
-    console.log('User Answers:', this.answers);
-    console.log('User Data:', this.userData);
+    this.sendUserToCorrectPage();
+  }
+
+  sendUserToCorrectPage() {
+    if (!this.userData.name || !this.userData.email) {
+      // If user data is not set, redirect to the form page
+      this.router.navigate(['/demo-assessment']);
+    } else if (this.answers.length < this.questions.length) {
+      // If no answers are provided, redirect to the assessment page
+      this.router.navigate(['/demo-assessment/questions']);
+    } else {
+      // If everything is set, redirect to the result page
+      this.router.navigate(['/demo-assessment/result']);
+    }
   }
 
   calculateScore() {
@@ -56,8 +80,6 @@ export class DemoAssessmentResultComponent implements OnInit {
     } else if (maxScore === this.scoreMap.Thinking) {
       this.scoreMap.dominantCentreOfExpression = 'Thinking';
     }
-
-    console.log(this.scoreMap);
   }
 
   getPercentage(score: number): number {

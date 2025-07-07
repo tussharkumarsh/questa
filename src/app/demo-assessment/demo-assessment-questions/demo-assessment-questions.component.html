@@ -2,7 +2,9 @@
     <!-- Left Column -->
     <div class="left-column">
         <div class="logo">
-            <img src="assets/img/logo-white.png" alt="Logo" />
+            <a class="cursor-pointer" [routerLink]="['/']">
+                <img src="assets/img/logo-white.png" alt="Logo" />
+            </a>
         </div>
 
         <div class="sidebar mt-5">
@@ -32,7 +34,7 @@
         <div class="right-content">
 
             <div class="mb-5">
-                <h2 *ngIf="name">Welcome, {{ name }}!</h2>
+                <h2 *ngIf="userData.name">Welcome, {{ userData.name }}!</h2>
             </div>
 
 

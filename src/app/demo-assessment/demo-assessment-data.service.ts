@@ -8,7 +8,13 @@ export class DemoAssessmentDataService {
   private name: string = '';
   private email: string = '';
   private userAnswers: any[] = [];
-  private questions = [
+  private questions: {
+    question: string;
+    options: {
+      center_of_expression: string;
+      value: string;
+    }[];
+  }[] = [
     {
       question: 'When faced with something new, I usually...',
       options: [

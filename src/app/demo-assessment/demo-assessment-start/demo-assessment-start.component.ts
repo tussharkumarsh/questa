@@ -11,15 +11,25 @@ export class DemoAssessmentStartComponent implements OnInit {
   name: string = '';
   email: string = '';
   formSubmitted: boolean = false;
+  emailError: string = '';
+  userData: { name: string; email: string } = { name: '', email: '' };
 
   constructor(
     private router: Router,
     private dataService: DemoAssessmentDataService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.userData = this.dataService.getUserInfo();
+    this.sendUserToCorrectPage();
+  }
 
-  emailError: string = '';
+  sendUserToCorrectPage() {
+    if (!this.userData.name || !this.userData.email) {
+      // If user data is not set, redirect to the form page
+      this.router.navigate(['/demo-assessment']);
+    }
+  }
 
   isValidWorkEmail(email: string): boolean {
     const blockedDomains = [
