@@ -125,17 +125,17 @@ export class DemoAssessmentDataService {
         },
       ],
     },
-    {
-      question: 'I handle challenges by',
-      options: [
-        { center_of_expression: 'action', value: 'Taking charge' },
-        {
-          center_of_expression: 'feeling',
-          value: 'Considering how others feel',
-        },
-        { center_of_expression: 'thinking', value: 'Gathering Information' },
-      ],
-    },
+    // {
+    //   question: 'I handle challenges by',
+    //   options: [
+    //     { center_of_expression: 'action', value: 'Taking charge' },
+    //     {
+    //       center_of_expression: 'feeling',
+    //       value: 'Considering how others feel',
+    //     },
+    //     { center_of_expression: 'thinking', value: 'Gathering Information' },
+    //   ],
+    // },
   ];
 
   constructor(private httpClient: HttpClient) {}
