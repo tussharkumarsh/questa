@@ -1,0 +1,47 @@
+<div class="main-container">
+    <!-- Left Column -->
+    <div class="left-column">
+        <div class="logo"> <!-- Adjust logo styling or use an <img> if needed -->
+            <a class="cursor-pointer" [routerLink]="['/']">
+                <img src="assets/img/logo-white.png" alt="Logo" />
+            </a>
+        </div>
+        <div class="left-text">
+            <h2>Start your <span>Enneagram journey</span> here!</h2>
+        </div>
+        <div class="left-image">
+            <img src="assets/img/demo-assesment/title_page.svg" alt="Left Bottom Image" />
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+        <div class="right-content">
+
+            <div class="line-1">Try our demo assessment</div>
+            <div class="line-2">to discover how your core</div>
+            <div class="line-3">— Action, Thinking, or Feeling —</div>
+            <div class="line-2">style drives your behaviour.</div>
+
+            <form class="my-5" (ngSubmit)="startAssessment()" novalidate>
+                <input type="text" [(ngModel)]="name" name="name" required placeholder="Your Full Name" />
+                <div *ngIf="formSubmitted && !name.trim()" class="text-danger">
+                    Name is required.
+                </div>
+
+
+                <input type="text" [(ngModel)]="contact" name="contact" required placeholder="Work Email or Phone Number" />
+                <div *ngIf="formSubmitted && !checkContactValidation().valid" class="text-danger">
+                    {{ checkContactValidation().error }}
+                </div>
+                <div class="my-5">
+                    <button class="banner-btn" type="submit"
+                        [disabled]="formSubmitted && !checkContactValidation().valid && !name.trim()">
+                        <span> GET STARTED WITH THE ASSESSMENT </span>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

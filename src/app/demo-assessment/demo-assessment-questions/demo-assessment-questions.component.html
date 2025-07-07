@@ -1,0 +1,71 @@
+<div class="main-container">
+    <!-- Left Column -->
+    <div class="left-column">
+        <div class="logo">
+            <a class="cursor-pointer" [routerLink]="['/']">
+                <img src="assets/img/logo-white.png" alt="Logo" />
+            </a>
+        </div>
+
+        <div class="sidebar mt-5">
+            <h5 class="text-warning">Demo Questionnaire</h5>
+
+            <div class="stepper">
+                <ng-container *ngFor="let q of questions; let i = index">
+                    <div class="step" [ngClass]="{ active: i === currentIndex, completed: selectedAnswers[i] }">
+                        <div class="dot"></div>
+                        <span class="label">Question {{ i + 1 }}</span>
+                    </div>
+                </ng-container>
+
+                <div class="step">
+                    <div class="dot"></div>
+                    <span class="label">Result</span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-text text-center mt-auto">
+
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+        <div class="right-content">
+
+            <div class="mb-5">
+                <h2 *ngIf="userData.name">Welcome, {{ userData.name }}!</h2>
+            </div>
+
+
+            <h6 class="text-center question-no">Question {{ currentIndex + 1 }}</h6>
+            <h3 class="text-center question-text">{{ questions[currentIndex].question }}</h3>
+
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-3 my-5">
+                <button class="btn answer-option" *ngFor="let opt of questions[currentIndex].options; let idx = index"
+                    [ngClass]="{
+
+                            'answer-option-active': selectedOptionIndex !== idx,
+                            'answer-option': selectedOptionIndex === idx
+                        }" (click)="selectOption(idx)">
+                    {{ opt.value }}
+                </button>
+            </div>
+
+
+
+            <div class="d-flex justify-content-center mt-5">
+                <button class="banner-btn" *ngIf="currentIndex < questions.length - 1"
+                    [disabled]="selectedOptionIndex === null" (click)="nextQuestion()">
+                    <span>NEXT QUESTION </span>
+                </button>
+
+                <button class="banner-btn" *ngIf="currentIndex === questions.length - 1"
+                    [disabled]="selectedOptionIndex === null" (click)="submitAssessment()">
+                    <span> Show Result </span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>

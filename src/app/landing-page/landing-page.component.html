@@ -51,11 +51,11 @@
 
             </div>
             <div style="text-align-last: center; padding-top: 40px; padding-bottom: 8rem;">
-                <button class="banner-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <a class="banner-btn text-decoration-none" [routerLink]="['/demo-assessment']">
                     <span>
-                        Speak with us
+                        {{'Take demo assessment' | uppercase}}
                     </span>
-                </button>
+                </a>
             </div>
 
 
@@ -133,6 +133,14 @@
         <!-- <img src="./assets/img/landing/mobile/girl.svg" style="position: absolute; bottom: 0; left: 5rem;" alt=""> -->
 
     </div>
+
+    <div style="text-align-last: center; padding-top: 40px; padding-bottom: 8rem;">
+                <a class="banner-btn text-decoration-none" [routerLink]="['/demo-assessment']">
+                    <span>
+                        {{'Take demo assessment' | uppercase}}
+                    </span>
+                </a>
+            </div>
 </section>
 
 
@@ -380,7 +388,7 @@
                 confidence at every step.
             </p>
 
-            <img style="padding: 2rem 0;" src="./assets/img/landing/platform.svg" alt="">
+            <img style="padding: 2rem 0; max-width: 100%;" src="./assets/img/landing/platform.svg" alt="">
         </div>
     </div>
 
