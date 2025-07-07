@@ -46,7 +46,7 @@ export class DemoAssessmentResultComponent implements OnInit {
     this.calculateScore();
     this.getInterpretation();
 
-    // this.sendUserToCorrectPage();
+    this.sendUserToCorrectPage();
   }
 
   sendUserToCorrectPage() {
