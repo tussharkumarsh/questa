@@ -60,7 +60,7 @@
         <img src="assets/img/demo-assesment/clapperboard.png" alt="" />
         {{ scoreMap.dominantCentreOfExpression }}
         <span>
-          {{ getPercentage(scoreMap[scoreMap.dominantCentreOfExpression]) }}%
+          {{ scoreMapInPercent[scoreMap.dominantCentreOfExpression] }}%
         </span>
       </p>
 
@@ -69,7 +69,7 @@
 
         <ng-container *ngIf="scoreMap.dominantCentreOfExpression !== 'Action'">
           <img src="assets/img/demo-assesment/mind.png" class="px-2" /> Action
-          {{ (scoreMapInPercent.Action) }}%
+          {{ scoreMapInPercent.Action }}%
         </ng-container>
 
         <ng-container *ngIf="scoreMap.dominantCentreOfExpression !== 'Feeling'">

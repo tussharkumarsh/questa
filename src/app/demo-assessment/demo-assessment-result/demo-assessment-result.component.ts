@@ -150,13 +150,13 @@ export class DemoAssessmentResultComponent implements OnInit {
 
     if (diff > 0) {
       // Reduce the dominant centre's percent by the difference
-      if (this.scoreMap.dominantCentreOfExpression === 'Action') {
-        this.scoreMapInPercent.Action -= diff;
-      } else if (this.scoreMap.dominantCentreOfExpression === 'Feeling') {
-        this.scoreMapInPercent.Feeling -= diff;
-      } else if (this.scoreMap.dominantCentreOfExpression === 'Thinking') {
-        this.scoreMapInPercent.Thinking -= diff;
-      }
+      // Find the key with the minimum percentage
+      const minKey = (['Action', 'Feeling', 'Thinking'] as const).reduce(
+        (min, key) =>
+          this.scoreMapInPercent[key] < this.scoreMapInPercent[min] ? key : min,
+        'Action' as const
+      );
+      this.scoreMapInPercent[minKey] -= diff;
     }
   }
 }
