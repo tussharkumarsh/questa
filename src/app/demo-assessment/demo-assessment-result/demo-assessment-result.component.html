@@ -7,12 +7,7 @@
       </a>
     </div>
     <div class="left-image text-center">
-      <img
-        class=""
-        style="width: 200px"
-        src="assets/img/demo-assesment/success.svg"
-        alt=""
-      />
+      <img class="" style="width: 200px" src="assets/img/demo-assesment/success.svg" alt="" />
       <p class="thank-text">
         Thank you for taking <br />
         the short assessment!
@@ -25,9 +20,7 @@
   <!-- Right Column -->
   <div class="right-column">
     <div class="right-content">
-      <p
-        class="my-2"
-        style="
+      <p class="my-2" style="
           font-family: Raleway;
           font-weight: 600;
           font-style: SemiBold;
@@ -36,12 +29,10 @@
           line-height: 36px;
           letter-spacing: 0%;
           text-align: center;
-        "
-      >
+        ">
         Basis the answers you have given,
       </p>
-      <p
-        style="
+      <p style="
           font-family: Raleway;
           font-weight: 600;
           font-style: SemiBold;
@@ -51,8 +42,7 @@
           letter-spacing: 0%;
           text-align: center;
           margin-bottom: 2rem;
-        "
-      >
+        ">
         it seems like your dominant style is
       </p>
 
@@ -77,9 +67,7 @@
           {{ scoreMapInPercent.Feeling }}%
         </ng-container>
 
-        <ng-container
-          *ngIf="scoreMap.dominantCentreOfExpression !== 'Thinking'"
-        >
+        <ng-container *ngIf="scoreMap.dominantCentreOfExpression !== 'Thinking'">
           <img src="assets/img/demo-assesment/mind.png" class="px-2" /> Thinking
           {{ scoreMapInPercent.Thinking }}%
         </ng-container>
