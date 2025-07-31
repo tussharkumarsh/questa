@@ -69,19 +69,19 @@
 
         <ng-container *ngIf="scoreMap.dominantCentreOfExpression !== 'Action'">
           <img src="assets/img/demo-assesment/mind.png" class="px-2" /> Action
-          {{ getPercentage(scoreMap.Action) }}%
+          {{ (scoreMapInPercent.Action) }}%
         </ng-container>
 
         <ng-container *ngIf="scoreMap.dominantCentreOfExpression !== 'Feeling'">
           <img src="assets/img/demo-assesment/heart.png" class="px-2" /> Feeling
-          {{ getPercentage(scoreMap.Feeling) }}%
+          {{ scoreMapInPercent.Feeling }}%
         </ng-container>
 
         <ng-container
           *ngIf="scoreMap.dominantCentreOfExpression !== 'Thinking'"
         >
           <img src="assets/img/demo-assesment/mind.png" class="px-2" /> Thinking
-          {{ getPercentage(scoreMap.Thinking) }}%
+          {{ scoreMapInPercent.Thinking }}%
         </ng-container>
       </div>
 

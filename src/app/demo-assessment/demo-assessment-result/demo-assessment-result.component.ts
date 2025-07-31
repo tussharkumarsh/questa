@@ -26,6 +26,19 @@ export class DemoAssessmentResultComponent implements OnInit {
     Thinking: 0,
     dominantCentreOfExpression: 'Action',
   };
+
+  scoreMapInPercent: {
+    Action: number;
+    Feeling: number;
+    Thinking: number;
+    dominantCentreOfExpression: 'Action' | 'Feeling' | 'Thinking';
+  } = {
+    Action: 0,
+    Feeling: 0,
+    Thinking: 0,
+    dominantCentreOfExpression: 'Action',
+  };
+
   questions: {
     question: string;
     options: {
@@ -44,6 +57,7 @@ export class DemoAssessmentResultComponent implements OnInit {
     this.userData = this.dataService.getUserInfo();
     this.questions = this.dataService.getQuestions();
     this.calculateScore();
+    this.calculateScoreInPercent();
     this.getInterpretation();
 
     this.sendUserToCorrectPage();
@@ -118,5 +132,31 @@ export class DemoAssessmentResultComponent implements OnInit {
     if (totalScore === 0) return 0;
 
     return Math.round((score / totalScore) * 100);
+  }
+
+  calculateScoreInPercent() {
+    const actionPercent = this.getPercentage(this.scoreMap.Action);
+    const feelingPercent = this.getPercentage(this.scoreMap.Feeling);
+    const thinkingPercent = this.getPercentage(this.scoreMap.Thinking);
+
+    // Calculate the sum and adjust if it exceeds 100%
+    let total = actionPercent + feelingPercent + thinkingPercent;
+    let diff = total - 100;
+
+    // Assign initial values
+    this.scoreMapInPercent.Action = actionPercent;
+    this.scoreMapInPercent.Feeling = feelingPercent;
+    this.scoreMapInPercent.Thinking = thinkingPercent;
+
+    if (diff > 0) {
+      // Reduce the dominant centre's percent by the difference
+      if (this.scoreMap.dominantCentreOfExpression === 'Action') {
+        this.scoreMapInPercent.Action -= diff;
+      } else if (this.scoreMap.dominantCentreOfExpression === 'Feeling') {
+        this.scoreMapInPercent.Feeling -= diff;
+      } else if (this.scoreMap.dominantCentreOfExpression === 'Thinking') {
+        this.scoreMapInPercent.Thinking -= diff;
+      }
+    }
   }
 }
