@@ -599,12 +599,6 @@
     color: #FF82EB;
 }
 
-.types-container {
-    width: 388px !important;
-    height: 388px !important;
-    margin: 0 auto;
-    z-index: 1
-}
 
 .new-age-platform {
     font-family: 'Raleway', sans-serif;
@@ -847,7 +841,7 @@
     }
 }
 
-@media (max-width: 992px) and (min-width: 300px) {
+@media (max-width: 992px) and (min-width: 279px) {
     .show-mobile {
         display: block;
     }
@@ -864,6 +858,13 @@
     .up-scroll-words-section-inner {
         text-align: center;
         padding: 1rem 0;
+    }
+
+    .types-container {
+        width: 360px !important;
+        height: 360px !important;
+        margin: 0 auto;
+        z-index: 1
     }
 
     .img-circle-0 {
@@ -1035,6 +1036,10 @@
 
     .Assessment-Products-div-img img {
         height: 35px;
+    }
+
+    .div-size {
+        height: 300px;
     }
 
     .number-count {
