@@ -57,7 +57,7 @@ import { WorkshopComponent } from './workshop/workshop.component';
     FormsModule,
 
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  // providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
