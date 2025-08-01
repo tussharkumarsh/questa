@@ -581,14 +581,100 @@
     display: block;
 }
 
+.text-right-center {
+    text-align: right;
+}
+
+.secion-p-y-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.The-science-behind {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #FF82EB;
+}
+
+.types-container {
+    width: 388px !important;
+    height: 388px !important;
+    margin: 0 auto;
+    z-index: 1
+}
+
+.new-age-platform {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.that-identifies-nine {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 72px;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.The-Enneagram-is {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 62px;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+
 .scrolling-text-heading {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
     font-weight: 500;
     line-height: 53.68px;
-    text-align: left;
+    text-align: right;
     color: #000000;
     text-wrap: nowrap;
+}
+
+.our-prcing-packages {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.our-prcing-packages p {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 52px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.margin-bottom-5rem {
+    margin-bottom: 5rem;
+}
+
+.secion-p-y-m-5 {
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+}
+
+.linesvg-margin {
+    margin-bottom: 3rem;
+}
+
+.take-demo-assessment {
+    text-align-last: center;
+    padding-top: 40px;
+    padding-bottom: 8rem;
 }
 
 .slider {
@@ -772,7 +858,7 @@
 
     .up-scroll-words-section {
         margin-top: 1rem;
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
     }
 
     .up-scroll-words-section-inner {
@@ -826,14 +912,92 @@
         color: #000000;
     }
 
+    .text-right-center {
+        text-align: center;
+    }
+
     .scrolling-text-heading {
         font-family: 'Raleway', sans-serif;
         font-size: 22px;
         font-weight: 500;
         line-height: 53.68px;
-        text-align: left;
+        text-align: center;
         color: #000000;
         text-wrap: nowrap;
+    }
+
+    .our-prcing-packages {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .our-prcing-packages p {
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 52px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .new-age-platform {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .that-identifies-nine {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        color: #000;
+    }
+
+    .The-Enneagram-is {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        color: #000;
+    }
+
+    .The-science-behind {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0px;
+        color: #FF82EB;
+    }
+
+    .margin-bottom-5rem {
+        margin-bottom: 1rem;
+    }
+
+    .secion-p-y-m-5 {
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+    }
+
+    .secion-p-y-5 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .linesvg-margin {
+        margin-bottom: 1rem;
+    }
+
+    .take-demo-assessment {
+        text-align-last: center;
+        padding-top: 40px;
+        padding-bottom: 3rem;
     }
 
     .section-y-how-we-have {
