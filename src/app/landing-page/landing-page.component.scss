@@ -791,57 +791,148 @@
     padding: 5rem 0;
 }
 
-@media (max-width: 414px) and (min-width: 300px) {
-    .banner-bg-img {
-        padding: 6rem 0 0rem 0;
-        background-image: url('/assets/img/landing/mobile/banner-bg.png');
-        height: 500px;
-        background-repeat: no-repeat;
-        background-size: contain;
+
+
+// @media (max-width: 414px) and (min-width: 300px) {
+//     .banner-bg-img {
+//         padding: 6rem 0 0rem 0;
+//         background-image: url('/assets/img/landing/mobile/banner-bg.png');
+//         height: 500px;
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//     }
+// }
+
+// @media (max-width: 416px) and (min-width: 413px) {
+//     .banner-bg-img {
+//         padding: 6rem 0 0rem 0;
+//         background-image: url('/assets/img/landing/mobile/banner-bg.png') !important;
+//         height: 576px !important;
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//     }
+// }
+
+// @media (max-width: 429px) and (min-width: 427px) {
+//     .banner-bg-img {
+//         padding: 6rem 0 0rem 0;
+//         background-image: url('/assets/img/landing/mobile/banner-bg.png');
+//         height: 594px;
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//     }
+// }
+
+// @media (max-width: 394px) and (min-width: 392px) {
+//     .banner-bg-img {
+//         padding: 6rem 0 0rem 0;
+//         background-image: url('/assets/img/landing/mobile/banner-bg.png');
+//         height: 546px;
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//     }
+// }
+
+// @media (max-width: 385px) and (min-width: 383px) {
+//     .banner-bg-img {
+//         padding: 6rem 0 0rem 0;
+//         background-image: url('/assets/img/landing/mobile/banner-bg.png');
+//         height: 533px;
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//     }
+// }
+
+
+.in-show-mobile {
+    display: none;
+}
+
+.in-hide-mobile {
+    display: block;
+}
+
+.banner-bg-img-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+.img-gird-banner {
+    position: absolute;
+    right: 0;
+    bottom: 42px;
+    height: 75%;
+    z-index: -1;
+}
+
+.banner-hand-img {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: -1;
+}
+
+@media (min-width: 540px) and (max-width: 1024px) {
+    .img-gird-banner {
+        position: absolute;
+        right: 0;
+        bottom: 42px;
+        height: 35%;
+        z-index: -1;
+    }
+
+    .banner-hand-img {
+        position: absolute;
+        top: 10%;
+        width: 50%;
+        left: 0;
+        z-index: -1;
     }
 }
 
-@media (max-width: 416px) and (min-width: 413px) {
-    .banner-bg-img {
-        padding: 6rem 0 0rem 0;
-        background-image: url('/assets/img/landing/mobile/banner-bg.png') !important;
-        height: 576px !important;
-        background-repeat: no-repeat;
-        background-size: contain;
+
+
+
+@media (min-width: 540px) and (max-width: 540px) {
+    .banner-bg-img-mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vw;
+        width: 100%;
+        z-index: -1;
     }
 }
 
-@media (max-width: 429px) and (min-width: 427px) {
-    .banner-bg-img {
-        padding: 6rem 0 0rem 0;
-        background-image: url('/assets/img/landing/mobile/banner-bg.png');
-        height: 594px;
-        background-repeat: no-repeat;
-        background-size: contain;
+@media (min-width: 279px) and (max-width: 540px) {
+    .in-show-mobile {
+        display: block !important;
+    }
+
+    .in-hide-mobile {
+        display: none !important;
     }
 }
 
-@media (max-width: 394px) and (min-width: 392px) {
-    .banner-bg-img {
-        padding: 6rem 0 0rem 0;
-        background-image: url('/assets/img/landing/mobile/banner-bg.png');
-        height: 546px;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-}
 
-@media (max-width: 385px) and (min-width: 383px) {
-    .banner-bg-img {
-        padding: 6rem 0 0rem 0;
-        background-image: url('/assets/img/landing/mobile/banner-bg.png');
-        height: 533px;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-}
+
 
 @media (max-width: 992px) and (min-width: 279px) {
+
+    .banner-bg-img {
+        padding: 6rem 0 0rem 0;
+        // background-image: url('/assets/img/landing/mobile/banner-bg.png');
+        height: 542px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+
     .show-mobile {
         display: block;
     }

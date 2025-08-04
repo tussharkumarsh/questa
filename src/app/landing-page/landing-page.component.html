@@ -1,11 +1,10 @@
-<section class="hide-mobile">
+<section class="in-hide-mobile">
     <div style="position: relative;">
         <!-- <div style="position: relative; height: 825px; background-size: cover; background-repeat: no-repeat; background-image: url(./assets/img/landing/landing-banner-bg.png);"> -->
         <app-top-navbar></app-top-navbar>
         <img src="./assets/img/landing/landing-banner-bg.png"
             style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;" alt="">
-        <img src="./assets/img/landing/right.png" style="position: absolute; right: 0; bottom: 42px; height: 75%;"
-            alt="">
+        <img src="./assets/img/landing/right.png" class="img-gird-banner" alt="">
         <div class="container" style="padding-top: 8rem;">
             <div style="text-align-last: center; padding-top: 5rem; padding-bottom: 5rem;">
                 <p style="font-family: 'Raleway', sans-serif;
@@ -85,10 +84,9 @@
             </div>
 
         </div>
-        <img data-aos="fade-up" src="./assets/img/landing/baner-hand.svg" style="position: absolute; top: 10%; left: 0;"
-            alt="">
-        <img id="loading" src="./assets/img/landing/object-circle.svg" style="position: absolute; top: 10%; left: 25%;"
-            alt="">
+        <img data-aos="fade-up" src="./assets/img/landing/baner-hand.svg" class="banner-hand-img" alt="">
+        <img id="loading" src="./assets/img/landing/object-circle.svg"
+            style="position: absolute; top: 10%; left: 25%; z-index: -1;" alt="">
         <img class="bounce" data-aos="zoom-in" src="./assets/img/landing/object-dimond.svg"
             style="position: absolute; bottom: 20%; left: 15%;" alt="">
         <img class="pulse" data-aos="zoom-in" src="./assets/img/landing/object-light.svg"
@@ -96,8 +94,9 @@
     </div>
 </section>
 
-<section class="show-mobile" style="position: relative;">
+<section class="in-show-mobile" style="position: relative;">
     <div class="banner-bg-img">
+        <img src="/assets/img/landing/mobile/banner-bg.png" class="banner-bg-img-mobile" alt="">
         <app-top-navbar></app-top-navbar>
         <p style="font-family: 'Raleway', sans-serif;
         font-size: 46px;
