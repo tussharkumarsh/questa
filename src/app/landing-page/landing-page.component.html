@@ -84,62 +84,65 @@
             </div>
 
         </div>
-        <img data-aos="fade-up" src="./assets/img/landing/baner-hand.svg" class="banner-hand-img" alt="">
+        <img src="./assets/img/landing/baner-hand.svg" class="banner-hand-img" alt="">
         <img id="loading" src="./assets/img/landing/object-circle.svg"
             style="position: absolute; top: 10%; left: 25%; z-index: -1;" alt="">
-        <img class="bounce" data-aos="zoom-in" src="./assets/img/landing/object-dimond.svg"
+        <img class="bounce" src="./assets/img/landing/object-dimond.svg"
             style="position: absolute; bottom: 20%; left: 15%;" alt="">
-        <img class="pulse" data-aos="zoom-in" src="./assets/img/landing/object-light.svg"
-            style="position: absolute; top: 10%; right: 5%;" alt="">
+        <img class="pulse" src="./assets/img/landing/object-light.svg" style="position: absolute; top: 10%; right: 5%;"
+            alt="">
     </div>
 </section>
 
 <section class="in-show-mobile" style="position: relative;">
     <div class="banner-bg-img">
-        <img src="/assets/img/landing/mobile/banner-bg.png" class="banner-bg-img-mobile" alt="">
+        <!-- <img src="/assets/img/landing/mobile/banner-bg.png" class="banner-bg-img-mobile" alt=""> -->
         <app-top-navbar></app-top-navbar>
-        <p style="font-family: 'Raleway', sans-serif;
-        font-size: 46px;
-        font-weight: 800;
-        line-height: 30px;
-        text-align: center;
-        color: #fff;
-        ">
-            Talent
-            <br>
-            <span style="font-family: 'Raleway', sans-serif;
-            font-size: 28px;
-            font-weight: 800;
-            line-height: 30px;
-            text-align: center;
-            color: #fff;">
-                Reimagined
-            </span>
-        </p>
 
-        <p style="font-family: 'Raleway', sans-serif;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: -0.03224727511405945px;
-        text-align: center;
-        color: #fff;">
-            Navigate the talent landscape seamlessly with <br>
-            the pioneers of Enneagram in India!
-        </p>
+        <div style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+            <div>
+                <p style="font-family: 'Raleway', sans-serif;
+                font-size: 80px;
+                font-weight: 800;
+                line-height: 45px;
+                text-align: center;
+                color: #fff;
+                ">
+                    Talent
+                    <br>
+                    <span style="font-family: 'Raleway', sans-serif;
+                    font-size: 40px;
+                    font-weight: 800;
+                    line-height: 65px;
+                    text-align: center;
+                    color: #fff;">
+                        Reimagined
+                    </span>
+                </p>
 
+                <p style="font-family: 'Raleway', sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: -0.03224727511405945px;
+                text-align: center;
+                color: #fff; width: 80%;     justify-self: center;">
+                    Navigate the talent landscape seamlessly with
+                    the pioneers of Enneagram in India!
+                </p>
+            </div>
 
-        <!-- <img src="./assets/img/landing/mobile/girl.svg" style="position: absolute; bottom: 0; left: 5rem;" alt=""> -->
+            <div class="take-demo-assessment">
+                <a class="banner-btn text-decoration-none" [routerLink]="['/demo-assessment']">
+                    <span>
+                        {{'Take demo assessment' | uppercase}}
+                    </span>
+                </a>
+            </div>
+        </div>
 
     </div>
 
-    <div class="take-demo-assessment">
-        <a class="banner-btn text-decoration-none" [routerLink]="['/demo-assessment']">
-            <span>
-                {{'Take demo assessment' | uppercase}}
-            </span>
-        </a>
-    </div>
 </section>
 
 
@@ -254,7 +257,7 @@
 
         <div class="row">
             <div class="col-md-6 my-2" (click)="assessmentProductScroll()" style="cursor: pointer;"
-                data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="500">
+                data-aos-easing="linear" data-aos-duration="500">
                 <div class="Assessment-Products-div card-on-hover">
                     <div class="Assessment-Products-div-img">
                         <img src="./assets/img/hand.svg" alt="">
@@ -275,7 +278,7 @@
                 </div>
             </div>
             <div class="col-md-6 my-2" (click)="assessmentProductScroll()" style="cursor: pointer;"
-                data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="500">
+                data-aos-easing="linear" data-aos-duration="500">
                 <div class="Assessment-Products-div card-on-hover">
                     <div class="Assessment-Products-div-img">
                         <img src="./assets/img/light.svg" alt="">
@@ -296,7 +299,7 @@
                 </div>
             </div>
             <div class="col-md-6 my-2" (click)="assessmentProductScroll()" style="cursor: pointer;"
-                data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="500">
+                data-aos-easing="linear" data-aos-duration="500">
                 <div class="Assessment-Products-div card-on-hover">
                     <div class="Assessment-Products-div-img">
                         <img src="./assets/img/leader.svg" alt="">
@@ -317,7 +320,7 @@
                 </div>
             </div>
             <div class="col-md-6 my-2" (click)="assessmentProductScroll()" style="cursor: pointer;"
-                data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="500">
+                data-aos-easing="linear" data-aos-duration="500">
                 <div class="Assessment-Products-div card-on-hover">
                     <div class="Assessment-Products-div-img">
                         <img src="./assets/img/coach.svg" alt="">
@@ -406,21 +409,21 @@
 
     <div class="container text-center">
         <div>
-            <div class="mb-5 dis-flex-mob" data-aos="fade-up">
+            <div class="mb-5 dis-flex-mob">
                 <img src="./assets/img/dimond.svg" alt="">
                 <img src="./assets/img/line.svg" alt="" class="line-icon">
                 <img src="./assets/img/dimond.svg" alt="">
             </div>
-            <p class="From-Insight" data-aos="fade-down">
+            <p class="From-Insight">
                 "We are a full stack talent solutions firm"
             </p>
-            <p class="MasterYour" data-aos="fade-down">
+            <p class="MasterYour">
                 Competency Mapping • Customised Assessments • Capability Building • Assessment-Development Centre •
                 Coaching!
             </p>
             <br>
 
-            <div class="mb-5 dis-flex-mob" data-aos="fade-down">
+            <div class="mb-5 dis-flex-mob">
                 <img src="./assets/img/dimond.svg" alt="">
                 <img src="./assets/img/line.svg" alt="" class="line-icon">
                 <img src="./assets/img/dimond.svg" alt="">
@@ -438,8 +441,7 @@
         </p>
 
         <div class="row">
-            <div class="col-md-4 my-3" (click)="BehaviouralEventInterviewScroll()" style="cursor: pointer;"
-                data-aos="zoom-in-up">
+            <div class="col-md-4 my-3" (click)="BehaviouralEventInterviewScroll()" style="cursor: pointer;">
                 <div style="position: relative;" class="card-on-hover">
                     <img src="./assets/img/landing/solution-1.svg" style="width: 100%;" alt="">
                     <div>
@@ -454,7 +456,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 my-3" routerLink="/talent-development" style="cursor: pointer;" data-aos="zoom-in-up">
+            <div class="col-md-4 my-3" routerLink="/talent-development" style="cursor: pointer;">
                 <div style="position: relative;" class="card-on-hover">
                     <img src="./assets/img/landing/solution-2.svg" style="width: 100%;" alt="">
                     <div>
@@ -470,7 +472,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 my-3" routerLink="/talent-optimisation" style="cursor: pointer;" data-aos="zoom-in-up">
+            <div class="col-md-4 my-3" routerLink="/talent-optimisation" style="cursor: pointer;">
                 <div style="position: relative;" class="card-on-hover">
                     <img src="./assets/img/landing/solution-3.svg" style="width: 100%;" alt="">
                     <div>
@@ -485,8 +487,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 my-3" routerLink="/leadership-development" style="cursor: pointer;"
-                data-aos="zoom-in-up">
+            <div class="col-md-6 my-3" routerLink="/leadership-development" style="cursor: pointer;">
                 <div style="position: relative;" class="card-on-hover">
                     <img src="./assets/img/landing/solution-4.svg" style="width: 100%;" alt="">
                     <div>
@@ -502,7 +503,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 my-3" routerLink="/talent-optimisation" style="cursor: pointer;" data-aos="zoom-in-up">
+            <div class="col-md-6 my-3" routerLink="/talent-optimisation" style="cursor: pointer;">
                 <div style="position: relative;" class="card-on-hover">
                     <img src="./assets/img/landing/solution-5.svg" style="width: 100%;" alt="">
                     <div>
@@ -685,7 +686,7 @@
             </div>
             <div class="col-md-6">
                 <div>
-                    <img data-aos="zoom-in" class="card-on-hover width-mob-100 img-circle-0"
+                    <img  class="card-on-hover width-mob-100 img-circle-0"
                         src="./assets/img/approch-graph.svg" alt="">
                 </div>
             </div>
@@ -717,31 +718,31 @@
 
         <div class="Performance-grid">
             <div>
-                <img src="./assets/img/landing/Performance-1.svg" data-aos="fade-up" class="card-on-hover"
+                <img src="./assets/img/landing/Performance-1.svg"  class="card-on-hover"
                     style="width: 100%; height: 100px;" alt="">
             </div>
             <div>
-                <img src="./assets/img/landing/arrow.svg" data-aos="fade-up" style="width: -webkit-fill-available;"
+                <img src="./assets/img/landing/arrow.svg"  style="width: -webkit-fill-available;"
                     alt="">
             </div>
             <div>
-                <img src="./assets/img/landing/Performance-2.svg" data-aos="fade-up" class="card-on-hover"
+                <img src="./assets/img/landing/Performance-2.svg"  class="card-on-hover"
                     style="width: 100%; height: 100px;" alt="">
             </div>
             <div>
-                <img src="./assets/img/landing/arrow.svg" data-aos="fade-up" style="width: -webkit-fill-available;"
+                <img src="./assets/img/landing/arrow.svg"  style="width: -webkit-fill-available;"
                     alt="">
             </div>
             <div>
-                <img src="./assets/img/landing/Performance-3.svg" data-aos="fade-up" class="card-on-hover"
+                <img src="./assets/img/landing/Performance-3.svg"  class="card-on-hover"
                     style="width: 100%; height: 100px;" alt="">
             </div>
             <div>
-                <img src="./assets/img/landing/arrow.svg" data-aos="fade-up" style="width: -webkit-fill-available;"
+                <img src="./assets/img/landing/arrow.svg"  style="width: -webkit-fill-available;"
                     alt="">
             </div>
             <div>
-                <img src="./assets/img/landing/Performance-3.svg" data-aos="fade-up" class="card-on-hover"
+                <img src="./assets/img/landing/Performance-3.svg"  class="card-on-hover"
                     style="width: 100%; height: 100px;" alt="">
             </div>
         </div>
@@ -784,7 +785,7 @@
         <div class="row">
             <div class="col-md-4 col-6">
                 <div class="padding-23">
-                    <img data-aos="zoom-in" src="./assets/img/landing/Predict-1.svg" class="Predict-img" alt="">
+                    <img  src="./assets/img/landing/Predict-1.svg" class="Predict-img" alt="">
                     <p class="Predict-img-text">
                         Bespoke Solutions: Tailored to Your Needs
                     </p>
@@ -792,7 +793,7 @@
             </div>
             <div class="col-md-4 col-6">
                 <div class="padding-23">
-                    <img data-aos="zoom-in" src="./assets/img/landing/Predict-2.svg" class="Predict-img" alt="">
+                    <img  src="./assets/img/landing/Predict-2.svg" class="Predict-img" alt="">
                     <p class="Predict-img-text">
                         Empirical Insights: Objective Decision-Making
                     </p>
@@ -800,7 +801,7 @@
             </div>
             <div class="col-md-4 col-6">
                 <div class="padding-23">
-                    <img data-aos="zoom-in" src="./assets/img/landing/Predict-3.svg" class="Predict-img" alt="">
+                    <img  src="./assets/img/landing/Predict-3.svg" class="Predict-img" alt="">
                     <p class="Predict-img-text">
                         Innovative Technologies: Future-Ready Solutions
                     </p>
@@ -808,7 +809,7 @@
             </div>
             <div class="col-md-4 col-6">
                 <div class="padding-23">
-                    <img data-aos="zoom-in" src="./assets/img/landing/Predict-4.svg" class="Predict-img" alt="">
+                    <img  src="./assets/img/landing/Predict-4.svg" class="Predict-img" alt="">
                     <p class="Predict-img-text">
                         Strategic Partnership Approach: Your Trusted Advisor
                     </p>
@@ -816,7 +817,7 @@
             </div>
             <div class="col-md-4 col-6">
                 <div class="padding-23">
-                    <img data-aos="zoom-in" src="./assets/img/landing/Predict-5.svg" class="Predict-img" alt="">
+                    <img  src="./assets/img/landing/Predict-5.svg" class="Predict-img" alt="">
                     <p class="Predict-img-text">
                         Industry Expertise: Insightful Guidance
                     </p>
@@ -824,7 +825,7 @@
             </div>
             <div class="col-md-4 col-6">
                 <div class="padding-23">
-                    <img data-aos="zoom-in" src="./assets/img/landing/Predict-6.svg" class="Predict-img" alt="">
+                    <img  src="./assets/img/landing/Predict-6.svg" class="Predict-img" alt="">
                     <p class="Predict-img-text">
                         Smooth and Swift Candidate Experience
                     </p>
@@ -1395,7 +1396,7 @@
 
 
         <div class="row" style="align-items: center;">
-            <div data-aos="fade-down" class="col-md-8">
+            <div class="col-md-8">
 
 
                 <div>
@@ -1443,7 +1444,7 @@ color: #000;">
             </div>
             <div class="col-md-4">
 
-                <div data-aos="zoom-in" class="div-size">
+                <div class="div-size">
 
 
                     <div class="types-container p-relative">
